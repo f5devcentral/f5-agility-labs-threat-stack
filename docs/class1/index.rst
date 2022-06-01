@@ -1,8 +1,8 @@
 Class 1: Getting Started - *Chicago Pizza*
-========================
+==========================================
 
 This class has one module and two labs. We're simply doing this to show the
-standard structure of a class/module/lab.
+standard structure of a class/module/lab. Jeff update 
 
 .. note:: It could be simplier to throw all the content in one file but that
    would miss the point of showing how we curently use RST.
