@@ -1,10 +1,19 @@
 Threat Stack Playbooks
 =====================================
 
-Section 1
+Spring4Shell Playbook
 ---------
 
-Fill in here   
+First, Access the Linux Ubuntu 20.04 LTS Box via WebShell.
+
+.. image:: _static/UbuntuWebshell.png
+
+Next, navigate to the spring4shell directory by entering the following command:
+
+.. code-block::
+   
+   cd spring4shell
+   
 
 Section 2
 ---------
