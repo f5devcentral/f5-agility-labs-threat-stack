@@ -50,6 +50,7 @@ To convert a ``.docx`` file from Microsoft Work to reStructuredText:
    need to refactor the rST to use the structure implemented in this template.
 
 .. _scripts:
+- *test*
 
 Build Scripts
 -------------
