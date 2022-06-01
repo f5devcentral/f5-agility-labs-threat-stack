@@ -49,7 +49,7 @@ Now to exploit, run the following command in the spring4shell directory.
    
 The following output should manifest.
 
-.. image:: _static/CurlOutput.png
+.. image:: _static/CurlOutput2.png
    
 Now run the following command via shell
 
