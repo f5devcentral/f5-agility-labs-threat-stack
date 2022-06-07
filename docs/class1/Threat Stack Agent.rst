@@ -7,11 +7,6 @@ Before you install the Threat Stack host-based Agent, you must prepare your Linu
 
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
-*Prerequisites*
-* Access to the Threat Stack Console 
-* Access to host either via CLI or RDP 
-
-
 
 Check for other Agents
 ----------------------
@@ -42,14 +37,28 @@ Install the Threat Stack Agent
 * Access to host either via CLI or RDP on a supported Operating System architecture(ARM or x86 architecture)
 * Access to a supported browser (Chrome, Edge, Safi, and Firefox)
 
-*Linux/Windows Distributions*
+*Linux Distributions*
+
+Threat Stack automatically walks customers through an Agent install on the Servers page. Log into Threat Stack > Click Servers. The Servers page displays.
 
 
-The Threat Stack application walks customers through an Agent install on the Servers page.
+*Challenge 6 – Install the Threat Stack Linux Agent*
 
-Log into Threat Stack > Click Servers. The Servers page displays. 
+.. code-block:: 
+   
+   MY_DEPLOY_KEY = 'XXXXXXXXX'
+   MY_HOSTNAME= 'StudentN-Linux'
+   
 
-Select Agent 2.x+ The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux or Windows distribution. 
+.. note::
+
+   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,     “Linux” 
+
+   
+ 
+Let’s begin by configuring some environmental variables for a streamlined lab.  
+
+Select Agent 2.x. The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux distribution. 
 
 .. image:: _static/Deploy_Server_Ubuntu.png
 
