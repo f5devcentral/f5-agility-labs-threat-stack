@@ -1,11 +1,17 @@
 Threat Stack Agent
 =====================================
 
-Deploying Threat Stack 
-----------------------
+Deploying the Threat Stack Agent 
+---------------------------------
 Before you install the Threat Stack host-based Agent, you must prepare your Linux distribution to work with the Agent. 
 
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
+
+*Prerequisites*
+* Access to the Threat Stack Console 
+* Access to host either via CLI or RDP 
+
+
 
 Check for other Agents
 ----------------------
