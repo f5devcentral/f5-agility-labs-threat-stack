@@ -92,7 +92,7 @@ Enable/Disable a Rule
 ---------------------
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
-.. image:: _static/RulesPage_OnOff.gif
+.. image:: _static/_RulesPage_OnOff.gif
 
 
 *Challenge 3 – How to use Threat Stack Rules*
