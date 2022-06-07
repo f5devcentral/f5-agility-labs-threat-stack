@@ -8,6 +8,10 @@ Before you install the Threat Stack host-based Agent, you must prepare your Linu
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
 
+.. image:: _static/_ServerPages_Install.gif
+
+
+
 Check for other Agents
 ----------------------
 
@@ -36,6 +40,8 @@ Install the Threat Stack Agent
 * Access to the Threat Stack Console
 * Access to host either via CLI or RDP on a supported Operating System architecture(ARM or x86 architecture)
 * Access to a supported browser (Chrome, Edge, Safi, and Firefox)
+
+
 
 *Linux Distributions*
 
@@ -118,6 +124,8 @@ The Threat Stack Container Agent can be orchestrated using Kubernetes, Docker, a
 * Base Rule Set 
 * Docker Rule Set 
 * Kubernetes Rule Set (Optional)
+
+
 
 Helm Chart 
 ----------
