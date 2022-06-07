@@ -131,7 +131,7 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
 Investigate
 ---------------------
 
-.. image:: _static/Investigate.png
+.. image:: _static/_AlertPage.gif
 
 By selecting Alerts, you’ll see an organized list sorted by severity, number of occurrences, and time of occurrence. Our rules are generated in real-time and have a retention period of 365 days. This can help you better track the abnormal spikes of alerts and review the behaviors that caused the events. Additional UI details are defined below. 
 
