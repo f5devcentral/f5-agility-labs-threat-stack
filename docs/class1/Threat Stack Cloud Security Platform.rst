@@ -55,7 +55,7 @@ AWS EC2 Inventory
 --------------------
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 
-.. image:: _static/All_EC2_Page.png
+.. image:: _static/_ServerPages_AllEC2.gif
 
 
 *Challenge 2 How To Review A Threat Stack Environment*
