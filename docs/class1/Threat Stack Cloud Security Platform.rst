@@ -77,7 +77,7 @@ By Selecting, *Rules Page*, you can review all the included pre-built rules that
 
 * **All Rules** can be created, updated, modified and deleted.
 
-.. image:: _static/Rules.png
+.. image:: _static/_RulagesPage.gif
 
 
 Rules Details Overview
