@@ -46,7 +46,7 @@ Threat Stack Agent retrieves a list of installed packages on the host each day a
 
 https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
 
-.. image:: _static/Vulnerabilities.png
+.. image:: _static/_ServerPages_Vulns.gif
 
 .. code-block:: console
 
