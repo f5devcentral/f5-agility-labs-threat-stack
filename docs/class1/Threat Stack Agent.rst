@@ -88,11 +88,26 @@ Let’s begin by configuring some environmental variables for a streamlined lab.
 
    **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,      “Windows” 
    
+   
+   
+Sysmon Install
+--------------
+
+Run the following commands from powershell/terminal:
+
 .. code-block::
 
-   wget https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi -OutFile Threat+Stack+Cloud+Security+Agent.latest.msi
-   
-   msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME 
+   wget https://download.sysinternals.com/files/Sysmon.zip -OutFile Sysmon.zip 
+   Expand-Archive -Path 'C:\Users\Administrator\Downloads\Sysmon.zip' -DestinationPath 'C:\Users\Administrator\Downloads\Sysmon\' 
+   cd 'C:\Users\Administrator\Downloads\Sysmon\' 
+   wget https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml -OutFile sysmonconfig-export.xml 
+   sysmon -i sysmonconfig-export.xml 
+
+ 
+.. code-block::
+
+   tsagent config --set EventLogs "Security,Microsoft-Windows-Sysmon/Operational" 
+   tsagent restart 
  
    
 
