@@ -168,26 +168,7 @@ To Reload K8 Config
     Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection    refused 
    Note: kubectl config view --raw > ~/.kube/config 
 
+.. code-block::
 
-
-Remove an Agent 
----------------
-
-To remove the Threat Stack Agent, follow your OS's normal software package removal option. The package was installed via Apt or Yum (even for the curl installer). 
-
-
-For example: 
-
-.. code-block:: 
-   
-   sudo systemctl stop threatstack
-   
-or
-
-.. code-block:: 
-   
-   sudo dpkg -r threatstack-agent
-
-
-
+   helm install threatstack-agent --values values.yaml threatstack/threatstack-agent 
 
