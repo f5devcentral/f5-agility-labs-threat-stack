@@ -167,6 +167,8 @@ To Reload K8 Config
 
     Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection    refused 
    Note: kubectl config view --raw > ~/.kube/config 
+   
+   
 
 .. code-block::
 
