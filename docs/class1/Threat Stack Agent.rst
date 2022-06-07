@@ -117,7 +117,7 @@ The Threat Stack Container Agent can be orchestrated using Kubernetes, Docker, a
 
 * Base Rule Set 
 * Docker Rule Set 
-* Kubernetes Rule Set
+* Kubernetes Rule Set (Optional)
 
 Helm Chart 
 ----------
@@ -130,23 +130,45 @@ Helm is a package manager on top of Kubernetes. It facilitates installation, upg
 * Configured Values file 
 
 
-Install the Threat Stack Helm Chart 
------------------------------------
 
-These instructions assume you already have Helm installed in your environment. It also assumes any Role-Based Access Control (RBAC) configuration has been completed for proper operation of Helm. Please see Installing Helm for instructions on installing Helm in your environment. 
+*Challenge 8 – Install the Threat Stack Container Agent*
 
-.. code-block:: 
-   
-   hello world!
-   
+.. note::
 
-Uninstall the Helm Chart 
--------------------------
-To uninstall the Helm chart, run the following command: 
-.. code-block:: 
+   Warning: Use only the command provided to install the Threat Stack Container Agent. Using UDF, establish a Terminal session with the host labelled,   “k8s” 
+
+
+.. code-block::
+
+   wget https://raw.githubusercontent.com/threatstack/threatstack-helm/master/values.yaml 
+   vim values.yaml 
+ 
+In the values.yaml, lets update a couple things. First, the **hostname on line 51** so Lab leaders can track activity easily in the lab. Then, agentDeployKey on line 67 with your previously used key and  
+
+
+.. code-block::
+
+   51 additionalSetupConfig: "--hostname=StudentN " 
    
-   hello world!
-   
+.. code-block::
+
+   67 agentDeployKey: "PROVIDED_DEPLOYKEY" 
+
+Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
+
+.. code-block::
+
+   ubuntu@ip-10-1-1-6:~$ helm repo add threatstack https://pkg.threatstack.com/helm 
+   "threatstack" has been added to your repositories 
+
+To Reload K8 Config 
+
+.. code-block::
+
+    Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection    refused 
+   Note: kubectl config view --raw > ~/.kube/config 
+
+
 
 Remove an Agent 
 ---------------
