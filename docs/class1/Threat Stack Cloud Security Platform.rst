@@ -51,7 +51,7 @@ https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Ass
 .. code-block:: console
 
 
-AWS EC2 Integration 
+AWS EC2 Inventory 
 --------------------
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 
