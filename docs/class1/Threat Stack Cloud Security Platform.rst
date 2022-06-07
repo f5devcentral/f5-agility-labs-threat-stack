@@ -33,7 +33,7 @@ Monitoring
 -----------
 By Selecting, Servers Page, you can filter or change information shown about servers, deploy Agents, and view a list of vulnerabilities found on the servers protected by the Agent. 
 
-.. image:: _static/Servers.png
+.. image:: _static/_ServerPages.gif
 
 For more information on other abilities navigate to our Servers Page Feature Walkthrough:
 
