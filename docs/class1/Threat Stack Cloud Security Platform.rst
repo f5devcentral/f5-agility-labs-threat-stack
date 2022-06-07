@@ -1,27 +1,30 @@
 Threat Stack Cloud Security Platform
 =====================================
 
-
-.. image:: _static/_Login.gif
-
 .. image:: _static/Dashboard.png
 
 Dashboard
 ----------
 
-To access the Dashboard, Log into Threat Stack: https://app.threatstack.com/login 
+.. image:: _static/_Login.gif
 
-In the Email field, type your account email address and click Next.
+
+Challenge 1 – Access the Threat Stack Cloud Security Platform 
+
+Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
+
+In the Email field, type your account email address and click Next. 
+
+In the Password field, type your account password and click Next. 
 
 .. code-block::
 
- For the lab enter, StudentN@Acme.com
+   for the lab enter:
+   studentN@dadismad.com
+   
+   for the password enter:
+   xxxxxxxxxx
 
-In the Password field, type your account password and click Next.
-
-.. code-block::
-
- For the lab enter, *<Provided by Lab Leader>*
 
 .. note::
  Access to the Dashboard is managed by the Lab Members.
