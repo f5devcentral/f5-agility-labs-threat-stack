@@ -77,21 +77,22 @@ By Selecting, *Rules Page*, you can review all the included pre-built rules that
 
 * **All Rules** can be created, updated, modified and deleted.
 
-.. image:: _static/_RulagesPage.gif
+.. image:: _static/_RulesPage.gif
 
 
 Rules Details Overview
 ----------------------
 Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, Select the **Down Arrow > Edit Rule**. 
 
-.. image:: _static/Rules_Details_Overview.png
+.. image:: _static/_RulesPage_Drawer.gif
+
 
 
 Enable/Disable a Rule 
 ---------------------
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
-.. image:: _static/Enable_Disable_Rule.png
+.. image:: _static/RulesPage_OnOff.gif
 
 
 *Challenge 3 – How to use Threat Stack Rules*
