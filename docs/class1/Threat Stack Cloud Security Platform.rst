@@ -157,14 +157,12 @@ More detailed information about alert views refer to the documentation below.
 https://threatstack.zendesk.com/hc/en-us/articles/205992556-Alert-View
 
 
-
-
 What is an Alert? 
 -----------------
 
 Alerts are behavior anomalies elevated from the stream of raw telemetry by rule filters, that do not have a corresponding suppression.
 
-.. image:: _static/_AlertPage_AlertContext.gif
+
 
 
 
@@ -174,4 +172,9 @@ Alert Life Cycle
 The following rule shows a Severity 1 event, where the Alert is reporting that Ptrace activity has been noted. As a Severity 1, the Threat Stack Security Platform uses Machine Learning to highlight occurrences of the event within 30 days this is called Alert Context.
 
 For more information as to why watch a Ptrace syscall, here is MITRE ATT&CKS take on the subject: https://attack.mitre.org/techniques/T1055/008/ 
+
+
+.. image:: _static/_AlertPage_AlertContext.gif
+
+
 
