@@ -176,5 +176,17 @@ For more information as to why watch a Ptrace syscall, here is MITRE ATT&CKS tak
 
 .. image:: _static/_AlertPage_AlertContext.gif
 
+Generally, the alert life cycle starts when you create a rule on the Threat Stack Rules page. 
+
+1. Create a rule 
+2. Maximize the effectiveness of that rule 
+3. Review an alert 
+4. Resolve an alert 
+
+.. note:: 
+
+   For further details on the Alert Life Cycle click here: https://threatstack.zendesk.com/hc/en-us/articles/211881823-Life-Cycle-of-an-Alert
+
+
 
 
