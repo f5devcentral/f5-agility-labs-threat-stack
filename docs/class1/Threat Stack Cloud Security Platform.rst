@@ -9,7 +9,7 @@ Dashboard
 .. image:: _static/_Login.gif
 
 
-Challenge 1 – Access the Threat Stack Cloud Security Platform 
+*Challenge 1 – Access the Threat Stack Cloud Security Platform*
 
 Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
 
@@ -58,32 +58,64 @@ With an Amazon Web Service (AWS) profile integration, the user can see exactly w
 .. image:: _static/All_EC2_Page.png
 
 
+*Challenge 2 How To Review A Threat Stack Environment*
+
+Using the information acquired above, start developing context on the ifnrastructure by reviewing the **servers** page.
+
+1. Review an Agent
+2. Review AWS EC2 Inventory
+3. Review a vulnerability. 
+
+* for further details on other abilities, navigate to here:
+https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page
+
+
 Detection
 ---------
 
-By Selecting, Rules Page, you can review all the included pre-built rules that monitor common threats to any infrastructure. The Base Ruleset has been created by our rules council & SOC team to monitor for the most common attack vectors our experts see on a continuous basis. Due to the complexities of modern infrastructure, we also provide customers with the ability to create custom rules. This provides you with the ability to monitor for behaviors that matter to your unique infrastructure. 
+By Selecting, *Rules Page*, you can review all the included pre-built rules that monitor common threats to any infrastructure. The Base Ruleset has been created by our rules council & SOC team to monitor for the most common attack vectors our experts see on a continuous basis. Due to the complexities of modern infrastructure, we also provide customers with the ability to create custom rules. This provides you with the ability to monitor for behaviors that matter to your unique infrastructure. 
+
+* **All Rules** can be created, updated, modified and deleted.
 
 .. image:: _static/Rules.png
 
 
 Rules Details Overview
 ----------------------
-Select the options button to view available configurations for the rule selected. 
+Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, Select the **Down Arrow > Edit Rule**. 
 
 .. image:: _static/Rules_Details_Overview.png
 
 
-Edit Rule Enable
-----------------
-Edit a rule by selecting the Down Arrow > Edit Rule 
-
-.. image:: _static/Edit_Rule_Enable.png
-
 Enable/Disable a Rule 
 ---------------------
-By shifting the Status of the rule, you can Enable or Disable the rule.  
+By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
 .. image:: _static/Enable_Disable_Rule.png
+
+
+*Challenge 3 – How to use Threat Stack Rules*
+
+* Using the information acquired above, start enabling rules based on goals, objectives, or for general visibility. 
+
+* **Clone any linux host Rule** and perform the following changes: 
+
+
+* **Rule Name**
+   
+   * User: **StudentN**: Privilege Escalations
+   
+* **Alert Title**
+
+   * User: **StudentN**: Privilege Escalation: auser: {{auser}} ran {{exe}} as user: {{user}} with {{arguments}} 
+   
+* **Alert Description**
+
+   
+  
+   
+
+
 
 
 Investigate
