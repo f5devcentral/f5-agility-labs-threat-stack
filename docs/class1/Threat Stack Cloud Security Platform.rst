@@ -1,6 +1,9 @@
 Threat Stack Cloud Security Platform
 =====================================
 
+
+.. image:: _static/_Login.gif
+
 .. image:: _static/Dashboard.png
 
 Dashboard
