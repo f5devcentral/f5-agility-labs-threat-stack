@@ -130,6 +130,8 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
 Investigate
 ---------------------
 
+.. image:: _static/Investigate.png
+
 By selecting Alerts, you’ll see an organized list sorted by severity, number of occurrences, and time of occurrence. Our rules are generated in real-time and have a retention period of 365 days. This can help you better track the abnormal spikes of alerts and review the behaviors that caused the events. Additional UI details are defined below. 
 
 * Tabs as focus areas: We narrowed in on the well-known concept of browser tabs as focus areas, with in-built default tabs and the ability for customers to create and save their own tabs. Each tab can be customized to match the originating rulesets and/or originating servers (EC2 tags). 
@@ -138,11 +140,22 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
 
 * Search on alert titles: All tabs have a "Filter by Title" search field. Results appear as the users type in the words in the search bar. 
  
+ 
+*Challenge 4 – Investigate an Alert*
+
+* Let’s put our Sec. Analyst hats on and start developing context surrounding the Alerts activity. 
+
+* First let’s start by selecting any Alert. 
+   * View in **Group View**
+   * View in **List View**
+   * View **Alert Context**
+
+
 More detailed information about alert views refer to the documentation below.
 
 https://threatstack.zendesk.com/hc/en-us/articles/205992556-Alert-View
 
-.. image:: _static/Investigate.png
+
 
 
 What is an Alert? 
@@ -150,4 +163,14 @@ What is an Alert?
 
 Alerts are behavior anomalies elevated from the stream of raw telemetry by rule filters, that do not have a corresponding suppression.
 
-.. image:: _static/Alerts.png
+.. image:: _static/_AlertPage_AlertContext.gif
+
+
+
+Alert Life Cycle
+----------------
+
+The following rule shows a Severity 1 event, where the Alert is reporting that Ptrace activity has been noted. As a Severity 1, the Threat Stack Security Platform uses Machine Learning to highlight occurrences of the event within 30 days this is called Alert Context.
+
+For more information as to why watch a Ptrace syscall, here is MITRE ATT&CKS take on the subject: https://attack.mitre.org/techniques/T1055/008/ 
+
