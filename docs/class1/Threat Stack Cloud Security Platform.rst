@@ -111,10 +111,19 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
    
 * **Alert Description**
 
+   * This rule is for StudentN alerts on privilege escalations using sudo and su. 
    
-  
+* **Aggregate Fields**
    
+   * auser, exe, user, arguments 
+   
+* **Rule Filter**
 
+   * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
+   
+.. note::
+   
+   For further details on Threat Stack Rules click here: https://threatstack.zendesk.com/hc/en-us/articles/4402570308877
 
 
 
