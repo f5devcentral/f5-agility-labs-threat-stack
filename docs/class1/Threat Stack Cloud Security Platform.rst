@@ -188,5 +188,12 @@ Generally, the alert life cycle starts when you create a rule on the Threat Stac
    For further details on the Alert Life Cycle click here: https://threatstack.zendesk.com/hc/en-us/articles/211881823-Life-Cycle-of-an-Alert
 
 
+*Challenge 5 – Trigger your StudentN Rule*
 
+Instinctively (or through this lab) you have created a rule. Apply the Alert Life Cycle to the rule. 
 
+* First let’s start by **reviewing the Rule**. 
+   * Trigger the StudentN rule. 
+   * Dismiss or Suppress the StudentN rule. 
+
+**Hint**: Watch the Gif
