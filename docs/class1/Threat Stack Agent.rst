@@ -41,8 +41,12 @@ Install the Threat Stack Agent
 
 Threat Stack automatically walks customers through an Agent install on the Servers page. Log into Threat Stack > Click Servers. The Servers page displays.
 
+Select Agent 2.x. The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux distribution. 
 
 *Challenge 6 – Install the Threat Stack Linux Agent*
+
+Let’s begin by configuring some environmental variables for a streamlined lab.
+
 
 .. code-block:: 
    
@@ -53,23 +57,44 @@ Threat Stack automatically walks customers through an Agent install on the Serve
 .. note::
 
    **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,     “Linux” 
-
-   
- 
-Let’s begin by configuring some environmental variables for a streamlined lab.  
-
-Select Agent 2.x. The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux distribution. 
-
-.. image:: _static/Deploy_Server_Ubuntu.png
-
-.. note::
-   When deploying the Linux Agent for Ubuntu, you have the option of assigning a server name via the 'hostname' flag on step 3 of update, install and      configure the agent. Instead of the standard instructions provided by the UI, enter the following command to assign an easier to read name as opposed    to the LAN address of the machine. 
    
    
 .. code-block::
 
-   sudo tsagent setup --deploy-key=XXXXXXXXXXXXXXXX --ruleset="Base Rule Set" --hostname = "<Your Hostname>"
+  sudo apt-get update && sudo apt-get install threatstack-agent -y && \ 
+  sudo tsagent config --set enable_bpf_sensors 1 && \ 
+  sudo tsagent config --set enable_inprogress_connects true && \ 
+  sudo tsagent setup --deploy-key="$MY_DEPLOY_KEY" --hostname="$MY_HOSTNAME" --ruleset="Base Rule Set" && \ 
+  sudo systemctl start threatstack 
+  
 
+Windows Distributions 
+----------------------
+
+Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into Threat Stack > Click **Servers**. The **Servers** page displays. 
+
+Select **Agent 2.x.** The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your **Windows Sever 2012 or above**. 
+
+*Challenge 7 – Install the Threat Stack Windows Agent*
+
+Let’s begin by configuring some environmental variables for a streamlined lab. Let’s open **PowerShell**
+
+.. code-block::
+
+   $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0" 
+   $Env:MY_HOSTNAME="StudentN-Windows" 
+
+.. note::
+
+   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,      “Windows” 
+   
+.. code-block::
+
+   wget https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi -OutFile Threat+Stack+Cloud+Security+Agent.latest.msi
+   
+   msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME 
+ 
+   
 
 Container Distributions 
 -----------------------
