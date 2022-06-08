@@ -1,5 +1,5 @@
-Threat Stack Agent
-=====================================
+ThreatML
+========
 
 Deploying the Threat Stack Agent 
 ---------------------------------
