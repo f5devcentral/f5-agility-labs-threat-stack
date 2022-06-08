@@ -11,3 +11,10 @@ Note: Anomalies may not be present
 2. In the Email field, type your account email address and click Next. 
 3. In the Password field, type your account password and click Next. 
 4. Select threatML in the navigation bar or View Anomalies from the dashboard 
+
+
+.. codeblock::
+
+  For the lab enter: StudentN@dadismad.com
+
+  for the lab enter: XXXXXXXXXXX
