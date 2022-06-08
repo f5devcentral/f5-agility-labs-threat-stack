@@ -14,10 +14,8 @@ Webhook API
 -----------
 
 .. image:: _static/_Integrations_Webhook.gif
- 
 
 Webhooks allow Threat Stack users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. Threat Stack sends alert details in JSON format through HTTPS Post. 
-
 
 * Using the Alert Webhooks API requires: 
 
@@ -29,8 +27,6 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 
    *Important Note*: Webhook sends alerts through HTTPS POST, the Webhook URL must be HTTPS. 
    
-   
-
 
 *Challenge 2 – Review Webhook*
 
@@ -42,29 +38,22 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 
 .. image:: _static/_Integrations_Webhook_LiveEx.gif
 
-
-
 RESTFul API 
 -----------
 
 .. image:: _static/_APIDOCS.gif
 
-
 The Threat Stack API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The Threat Stack API manages endpoints via the standard HTTP methods.  
 
 All requests for the API use the same host: 
-
 
 .. codeblock::
 
    https://api.threatstack.com/v2/ 
    
-   
 **Configuring API Environment**
 
 The variables below are required to authenticate against the Threat Stack Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
-
- 
 
 **Environmental Variables**
 
@@ -72,8 +61,6 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
 
 
 .. image:: _static/_Integrations_Keys.gif
-
-
 
 **Key variables and their meaning**
 
@@ -85,11 +72,11 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
 
 
 *Challenge 3 – Configure API & First Request*
+
 We recommend using our UDF Linux Host but any host with python will work.  
 
 
 1. Clone a copy of Threat Stack API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
-
 
 .. code_block:: 
 
@@ -97,7 +84,6 @@ We recommend using our UDF Linux Host but any host with python will work.
    cd ~/threatstack-api-scripts/ 
    
 2. Install Python Script Requirements 
-
 
 .. code_block:: 
 
