@@ -68,7 +68,7 @@ The variables below are required to authenticate against the Threat Stack Securi
 
 **Environmental Variables**
 
-Let’s begin by gather these variables, you can find these in the Threat Stack UI > Settings > Application Keys 
+Let’s begin by gather these variables, you can find these in the **Threat Stack UI > Settings > Application Keys**
 
 
 .. image:: _static/_Integrations_Keys.gif
