@@ -15,3 +15,14 @@ Confirm Python Environment
    Python 3.8.10 
 
 
+Confirm AWS CLI 
+
+.. code-block::
+
+  aws configure list 
+  Name                    Value             Type    Location 
+  ----                    -----             ----    -------- 
+  profile                <not set>             None    None 
+  access_key     ****************M2OT shared-credentials-file 
+  secret_key     ****************ZtuZ shared-credentials-file 
+  region                us-east-1      config-file    ~/.aws/config 
