@@ -48,3 +48,77 @@ RESTFul API
 -----------
 
 .. image:: _static/_APIDOCS.gif
+
+
+The Threat Stack API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The Threat Stack API manages endpoints via the standard HTTP methods.  
+
+All requests for the API use the same host: 
+
+
+.. codeblock::
+
+   https://api.threatstack.com/v2/ 
+   
+   
+**Configuring API Environment**
+
+The variables below are required to authenticate against the Threat Stack Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
+
+ 
+
+**Environmental Variables**
+
+Let’s begin by gather these variables, you can find these in the Threat Stack UI > Settings > Application Keys 
+
+
+.. image:: _static/_Integrations_Keys.gif
+
+
+
+**Key variables and their meaning**
+
+* **TS_USER_ID / HAWK Auth ID** - User ID of the API key holder 
+
+* **TS_API_KEY / HAWK Auth Key** - API key for the user specified by TS_USER_ID 
+
+* **TS_ORGANIZATION_ID / HAWK Ext** - Organization ID of the organization to access 
+
+
+*Challenge 3 – Configure API & First Request*
+We recommend using our UDF Linux Host but any host with python will work.  
+
+
+1. Clone a copy of Threat Stack API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
+
+
+.. code_block:: 
+
+   git clone https://github.com/threatstack/threatstack-api-scripts.git 
+   cd ~/threatstack-api-scripts/ 
+   
+2. Install Python Script Requirements 
+
+
+.. code_block:: 
+
+   sudo pip3 install -r requirements.txt 
+   Note: You might have to install pip3 if the instance (or local machine) doesn’t have it. 
+   sudo apt install python3-pip 
+
+
+3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. Edit the **threatstack.cfg.sample** to update with your **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. 
+
+.. code_block:: 
+
+   cd GetAllAgents 
+   vim threatstack.cfg.sample  
+   cp threatstack.cfg.sample threatstack.cfg 
+  
+  
+4. Run it!
+
+.. code_block:: 
+
+   python3 get_agents.py 
+   Returned 30 agents. 
+   30 agents written to file. 
