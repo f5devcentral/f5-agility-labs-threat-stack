@@ -13,7 +13,7 @@ Threat Stack offers two types of APIs – Webhooks and REST API. The Webhooks AP
 Webhook API 
 -----------
 
-.. image:: _static/_Integrations_Webhook_LiveEx.gif
+.. image:: _static/_Integrations_Webhook.gif
 
 
  
@@ -40,3 +40,6 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 2. Select Settings > Integrations in the navigation bar 
 3. Scroll to the Webhook API section 
 4. Click this link to review the events sent to Request Bin: https://requestbin.com/r/enga46ei5gint/ 
+
+
+.. image:: _static/_Integrations_Webhook_LiveEx.gif
