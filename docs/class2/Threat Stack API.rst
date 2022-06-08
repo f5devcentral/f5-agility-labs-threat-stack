@@ -1,3 +1,7 @@
+.. code-block::
+
+   ps aux | grep audit
+
 Threat Stack API
 ================
 
@@ -108,8 +112,3 @@ We recommend using our UDF Linux Host but any host with python will work.
    python3 get_agents.py 
    Returned 30 agents. 
    30 agents written to file. 
-   
-   
-   .. code-block::
-
-   ps aux | grep audit
