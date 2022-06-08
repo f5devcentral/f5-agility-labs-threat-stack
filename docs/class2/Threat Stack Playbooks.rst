@@ -53,7 +53,23 @@ Python Bot Setup
 ----------------
 The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
 
- 
 
 Step 1: Update Threat Stack Credentials File 
 
+.. code-block::
+
+   sudo vim credentials 
+   [default] 
+   ts_org=ORG 
+   ts_user=USER 
+   ts_key=KEY 
+   
+Step 2: Make the directory
+
+
+.. code-block::
+   mkdir ../.threatstack 
+   cp credentials ../.threatstack 
+   
+
+   
