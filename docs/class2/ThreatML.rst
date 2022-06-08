@@ -17,8 +17,7 @@ Note: Anomalies may not be present
 4. Select threatML in the navigation bar or View Anomalies from the dashboard 
 
 
-.. codeblock::
+.. code-block::
 
   For the lab enter: StudentN@dadismad.com
-
-  for the lab enter: XXXXXXXXXXX
+  For the lab enter: XXXXXXXXXXX
