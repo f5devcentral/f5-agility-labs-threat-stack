@@ -31,6 +31,6 @@ Contents
 --------
 
 .. toctree::
-   Threat Stack Cloud Security Platform
+   ThreatML
    Threat Stack API
-   Playbooks
+   Self Protecting Cloud 
