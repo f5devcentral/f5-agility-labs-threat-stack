@@ -47,7 +47,7 @@ The Threat Stack API using RESTful principles with predictable, resource-oriente
 
 All requests for the API use the same host: 
 
-.. codeblock::
+.. code-block::
 
    https://api.threatstack.com/v2/ 
    
@@ -78,14 +78,14 @@ We recommend using our UDF Linux Host but any host with python will work.
 
 1. Clone a copy of Threat Stack API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
 
-.. code_block:: 
+.. code-block:: 
 
    git clone https://github.com/threatstack/threatstack-api-scripts.git 
    cd ~/threatstack-api-scripts/ 
    
 2. Install Python Script Requirements 
 
-.. code_block:: 
+.. code-block:: 
 
    sudo pip3 install -r requirements.txt 
    Note: You might have to install pip3 if the instance (or local machine) doesn’t have it. 
@@ -94,7 +94,7 @@ We recommend using our UDF Linux Host but any host with python will work.
 
 3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. Edit the **threatstack.cfg.sample** to update with your **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. 
 
-.. code_block:: 
+.. code-block:: 
 
    cd GetAllAgents 
    vim threatstack.cfg.sample  
@@ -103,7 +103,7 @@ We recommend using our UDF Linux Host but any host with python will work.
   
 4. Run it!
 
-.. code_block:: 
+.. code-block:: 
 
    python3 get_agents.py 
    Returned 30 agents. 
