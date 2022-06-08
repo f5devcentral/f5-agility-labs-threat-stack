@@ -14,8 +14,6 @@ Webhook API
 -----------
 
 .. image:: _static/_Integrations_Webhook.gif
-
-
  
 
 Webhooks allow Threat Stack users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. Threat Stack sends alert details in JSON format through HTTPS Post. 
@@ -43,3 +41,10 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 
 
 .. image:: _static/_Integrations_Webhook_LiveEx.gif
+
+
+
+RESTFul API 
+-----------
+
+.. image:: _static/_APIDOCS.gif
