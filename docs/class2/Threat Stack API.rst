@@ -1,7 +1,3 @@
-.. code-block::
-
-   ps aux | grep audit
-
 Threat Stack API
 ================
 
