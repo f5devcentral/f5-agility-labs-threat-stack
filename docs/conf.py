@@ -191,10 +191,8 @@ html_theme_options = {
     #"version_selector": True,
 }
 
-html_context = {
-    "version_meta_path": "/training/community/template/versions.json",
-    "project_safe": re.sub("[^A-Za-z0-9]+", "", project),
-}
+#html_context = { "version_meta_path": "/training/community/template/versions.json", "project_safe": re.sub("[^A-Za-z0-9]+", "", project),}
+
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
 extlinks = {"issues": (("%s/issues/%%s" % github_repo), "issue ")}
