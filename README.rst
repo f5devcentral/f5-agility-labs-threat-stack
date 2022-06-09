@@ -1,5 +1,5 @@
-F5 Agility Lab Template
-=======================
+F5 Agility Threat Stack Labs
+============================
 
 Introduction
 ------------

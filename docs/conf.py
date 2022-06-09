@@ -99,9 +99,7 @@ graphviz_dot_args = [
     "-Efontname='%s'" % graphviz_font,
 ]
 
-html_context = {
-  "github_url":github_repo
-}
+html_context = {"github_url": github_repo}
 
 diag_fontpath = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 diag_html_image_format = "SVG"
@@ -129,7 +127,7 @@ if found:
     spelling_filters = []
 
 source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
+    ".md": "recommonmark.parser.CommonMarkParser",
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -138,7 +136,7 @@ templates_path = ["_templates"]
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
+source_suffix = [".rst", ".md"]
 
 # The master toctree document.
 master_doc = "index"
@@ -188,10 +186,10 @@ html_sidebars = {"**": ["searchbox.html", "localtoc.html", "globaltoc.html"]}
 html_theme_options = {
     "site_name": "Community Training Classes & Labs",
     "next_prev_link": True
-    #"version_selector": True,
+    # "version_selector": True,
 }
 
-#html_context = { "version_meta_path": "/training/community/template/versions.json", "project_safe": re.sub("[^A-Za-z0-9]+", "", project),}
+# html_context = { "version_meta_path": "/training/community/template/versions.json", "project_safe": re.sub("[^A-Za-z0-9]+", "", project),}
 
 html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
 
