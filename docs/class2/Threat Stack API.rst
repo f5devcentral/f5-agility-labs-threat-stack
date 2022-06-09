@@ -81,7 +81,7 @@ We recommend using our UDF Linux Host but any host with python will work.
 .. code-block:: 
 
    git clone https://github.com/threatstack/threatstack-api-scripts.git 
-   cd ~/threatstack-api-scripts/ 
+   cd threatstack-api-scripts
    
 2. Install Python Script Requirements 
 
