@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      S3_DIR: threat-stack-lab
+      S3_DIR: threat-stack
 
     steps:
     - uses: actions/checkout@v2
