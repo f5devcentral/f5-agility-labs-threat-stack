@@ -34,4 +34,3 @@ Contents
    Threat Stack Cloud Security Platform
    Threat Stack Agent
    Threat Stack Playbooks
-   api
