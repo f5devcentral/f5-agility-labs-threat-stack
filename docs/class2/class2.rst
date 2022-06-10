@@ -24,7 +24,6 @@ Additionally, we can become an extension of your security team via our co-manage
 
 * `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
 
-Check out the :doc:`Threat_Stack_Cloud_Security_Platform`
 
 
 Contents
