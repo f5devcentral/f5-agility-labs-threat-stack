@@ -31,4 +31,7 @@ Contents
 --------
 
 .. toctree::
+   Threat_Stack_Cloud_Security_Platform.rst
    Threat_Stack_Agent.rst
+   Threat_Stack_Playbooks.rst
+   
