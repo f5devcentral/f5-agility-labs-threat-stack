@@ -21,6 +21,7 @@ Next, to spin up the vulnerable Spring server, run the following command:
 
 
 .. code-block::
+
    docker run -p 80:8080 spring4shell
    
    
