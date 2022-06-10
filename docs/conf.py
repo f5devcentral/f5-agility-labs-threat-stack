@@ -16,7 +16,7 @@ import f5_sphinx_theme
 classname = "Threat Stack - Getting Started"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/f5-agility-labs-threatstack"
+github_repo = "https://github.com/f5devcentral/f5-agility-labs-threat-stack"
 
 #
 # END CONFIG
