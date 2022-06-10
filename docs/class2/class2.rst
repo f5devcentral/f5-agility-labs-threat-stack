@@ -32,5 +32,5 @@ Contents
 
 .. toctree::
    ThreatML
-   Threat Stack API
-   Self Protecting Cloud 
+   Threat_Stack_API
+   Self_Protecting_Cloud 
