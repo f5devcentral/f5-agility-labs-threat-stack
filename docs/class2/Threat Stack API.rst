@@ -81,7 +81,7 @@ We recommend using our UDF Linux Host but any host with python will work.
 .. code-block:: 
 
    git clone https://github.com/threatstack/threatstack-api-scripts.git 
-   cd ~/threatstack-api-scripts/ 
+   cd threatstack-api-scripts
    
 2. Install Python Script Requirements 
 
@@ -92,7 +92,7 @@ We recommend using our UDF Linux Host but any host with python will work.
    sudo apt install python3-pip 
 
 
-3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. Edit the **threatstack.cfg.sample** to update with your **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. 
+3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. Edit the **threatstack.cfg.sample** to update with your **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID** under the [USER_INFO] and [DEFAULT] sections of the text file.
 
 .. code-block:: 
 
