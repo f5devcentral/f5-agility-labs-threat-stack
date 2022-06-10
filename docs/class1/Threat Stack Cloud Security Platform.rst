@@ -67,6 +67,7 @@ Using the information acquired above, start developing context on the infrastruc
 3. Review a vulnerability. 
 
 * for further details on other abilities, navigate to here:
+
 https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page
 
 
