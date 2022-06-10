@@ -31,5 +31,4 @@ Contents
 --------
 
 .. toctree::
-   ::glob::
    Threat_Stack_Agent.rst

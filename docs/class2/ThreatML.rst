@@ -21,7 +21,3 @@ Note: Anomalies may not be present
 
   For the lab enter: StudentN@dadismad.com
   For the lab enter: XXXXXXXXXXX
-  
-.. toctree::
-   Threat Stack API
-   Self Protecting Cloud
