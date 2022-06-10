@@ -33,5 +33,5 @@ Contents
 .. toctree::
    Threat Stack Cloud Security Platform
    Threat Stack Agent
-   Threat Stack Advanced Usage
+   Threat Stack Playbooks
    api
