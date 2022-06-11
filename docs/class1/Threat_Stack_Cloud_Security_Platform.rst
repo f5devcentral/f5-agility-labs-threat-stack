@@ -9,33 +9,24 @@ Challenge 1 – Access the Threat Stack Cloud Security Platform
 2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
 3. In the Password field, type **xxxxxxx** as the password and click Next. 
 
-.. code-block::
-
-   Email:
-   StudentN@dadismad.com
-   
-   Password:
-   xxxxxxxxxx
-
-
 .. note::
  Access to the Threat Stack Cloud Security Platform is managed by the Lab Members.
 
 Monitoring
 -----------
-By selecting *Servers Page*, you can filter or change information shown about servers, deploy Agents, and view a list of vulnerabilities found on the servers protected by the Agent. 
+By selecting **Servers Page**, you can filter or change information shown about servers, deploy Agents, and view a list of vulnerabilities found on the servers protected by the Agent. 
 
 .. image:: _static/_ServerPages.gif
 
-For more information on other abilities navigate to our Servers Page Feature Walkthrough:
-
-https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
+.. note::
+For a feature walthrough of the Servers Page navigate to: https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
 
 Vulnerabilities
 ^^^^^^^^^^^^^^^
 Threat Stack Agent retrieves a list of installed packages on the host each day and matches against all known Common Vulnerabilities & Exposures (CVEs) captured in the National Vulnerability Database (NVD). It then compares them against the published security notice and triage data from the specific Linux distribution. 
 
-https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
+.. note::
+For a feature walthrough of Vulnerability Assessments navigate here: https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
 
 .. image:: _static/_ServerPages_Vulns.gif
 
@@ -44,9 +35,7 @@ https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Ass
 AWS EC2 Inventory 
 ^^^^^^^^^^^^^^^
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
-
 .. image:: _static/_ServerPages_AllEC2.gif
-
 
 *Challenge 2 How To Review A Threat Stack Environment*
 
@@ -55,10 +44,6 @@ Using the information acquired above, start developing context on the infrastruc
 1. Review an Agent
 2. Review AWS EC2 Inventory
 3. Review a vulnerability. 
-
-* for further details on other abilities, navigate to here:
-
-https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page
 
 
 Detection
@@ -71,8 +56,8 @@ By selecting *Rules Page*, you can review all the included pre-built rules that 
 .. image:: _static/_RulesPage.gif
 
 
-Rules Details Overview
-^^^^^^^^^^^^^^^^^^^^^^
+Rules Overview
+^^^^^^^^^^^^^^^
 Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, select the **Down Arrow > Edit Rule**. 
 
 .. image:: _static/_RulesPage_Drawer.gif
