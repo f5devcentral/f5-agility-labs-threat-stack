@@ -71,3 +71,6 @@ then run:
 .. code-block::
 
    touch yougotpwndStudentN.txt
+
+.. image:: _static/pwned.png
+
