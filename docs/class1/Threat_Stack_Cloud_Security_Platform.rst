@@ -4,7 +4,7 @@ Threat Stack Cloud Security Platform
 .. image:: _static/_Login.gif
 
 .. attention:: 
- Challenge 1 – Access the Threat Stack Cloud Security Platform
+ **Challenge 1** – *Access the Threat Stack Cloud Security Platform*
 
  1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
  2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
@@ -31,21 +31,19 @@ Threat Stack Agent retrieves a list of installed packages on the host each day a
 
 .. image:: _static/_ServerPages_Vulns.gif
 
-.. code-block:: console
-
 AWS EC2 Inventory 
 ^^^^^^^^^^^^^^^
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 .. image:: _static/_ServerPages_AllEC2.gif
 
-**Challenge 2 How To Review A Threat Stack Environment**
+.. attention:: 
+ **Challenge 2** - *How To Review A Threat Stack Environment*
 
-Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
+ Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
 
-1. Review an Agent
-2. Review AWS EC2 Inventory
-3. Review a vulnerability. 
-
+ 1. Review an Agent
+ 2. Review AWS EC2 Inventory
+ 3. Review a vulnerability. 
 
 Detection
 ---------
@@ -64,15 +62,14 @@ Select the **Options** button to view available configurations for the rule sele
 .. image:: _static/_RulesPage_Drawer.gif
 
 
-
 Enable/Disable a Rule 
 ^^^^^^^^^^^^^^^^^^^^^
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
 .. image:: _static/_RulesPage_OnOff.gif
 
-
-*Challenge 3 – How to use Threat Stack Rules*
+.. attention:: 
+ **Challenge 3** – *How to use Threat Stack Rules*
 
 * Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
 
@@ -100,7 +97,6 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
    * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
    
 .. note::
-   
    For further details on Threat Stack Rules click here: https://threatstack.zendesk.com/hc/en-us/articles/4402570308877
 
 
@@ -118,8 +114,8 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
 
 * Search on alert titles: All tabs have a "Filter by Title" search field. Results appear as the users type in the words in the search bar. 
  
- 
-*Challenge 4 – Investigate an Alert*
+.. attention:: 
+ **Challenge 4** – *Investigate an Alert*
 
 * Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
 
@@ -128,10 +124,8 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
    * View in **List View**
    * View **Alert Context**
 
-
-More detailed information about alert views refer to the documentation below.
-
-https://threatstack.zendesk.com/hc/en-us/articles/205992556-Alert-View
+.. note::
+ More detailed information about alert views refer to the documentation below: https://threatstack.zendesk.com/hc/en-us/articles/205992556-Alert-View
 
 
 What is an Alert? 
