@@ -1,9 +1,7 @@
 Threat Stack Cloud Security Platform®
 *************************************
 
-Welcome to the Threat Stack Cloud Security Platform®
-
-Threat Stack is a SaaS based application that supports host intrusion detection for both on premise as well as cloud workloads. Supporting most major linux distributions, Windows Server, as well as a variety of container runtimes including Docker and ContainerD to provide unparalleled visibility into your workloads.
+Threat Stack Cloud Security Platform® is a SaaS based application that supports host intrusion detection for both on premise as well as cloud workloads. Supporting most major linux distributions, Windows Server, as well as a variety of container runtimes including Docker and ContainerD to provide unparalleled visibility into your workloads.
 
 .. image:: _static/_Login.gif
 
@@ -37,17 +35,17 @@ Threat Stack Agent retrieves a list of installed packages on the host each day a
 
 AWS EC2 Inventory 
 ^^^^^^^^^^^^^^^
-With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
+With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc. 
+
 .. image:: _static/_ServerPages_AllEC2.gif
 
 .. attention:: 
  **Challenge 2** - *How To Review A Threat Stack Environment*
-
  Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
-
- 1. Review an Agent
- 2. Review AWS EC2 Inventory
- 3. Review a vulnerability. 
+ 
+ * Review an Agent
+ * Review AWS EC2 Inventory
+ * Review a vulnerability. 
 
 Detection
 ---------
@@ -70,45 +68,41 @@ Enable/Disable a Rule
 ^^^^^^^^^^^^^^^^^^^^^
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
-.. image:: _static/_RulesPage_OnOff.gif
+
+.. image:: _static/_Enable_Sample_Rule.gif
 
 .. attention:: 
  **Challenge 3** – *How to use Threat Stack Rules*
 
-* Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
+ * Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
 
-* **Clone any linux host Rule** and perform the following changes: 
+ * **Clone any linux host Rule** and perform the following changes: 
 
 
-* **Rule Name**
-   
-   * User: **StudentN**: Privilege Escalations
-   
-* **Alert Title**
+ * **Rule Name**
 
-   * User: **StudentN**: Privilege Escalation: auser: {{auser}} ran {{exe}} as user: {{user}} with {{arguments}} 
-   
-* **Alert Description**
+    * User: **StudentN**: Privilege Escalations
 
-   * This rule is for StudentN alerts on privilege escalations using sudo and su. 
-   
-* **Aggregate Fields**
-   
-   * auser, exe, user, arguments 
-   
-* **Rule Filter**
+ * **Alert Title**
 
-   * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
-   
-   
+    * User: **StudentN**: Privilege Escalation: auser: {{auser}} ran {{exe}} as user: {{user}} with {{arguments}} 
+
+ * **Alert Description**
+
+    * This rule is for StudentN alerts on privilege escalations using sudo and su. 
+
+ * **Aggregate Fields**
+
+    * auser, exe, user, arguments 
+
+ * **Rule Filter**
+
+    * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
+
+**Rule Creation Example**
 .. image:: _static/_RuleCreation_Example.gif
-
-
-.. image:: _static/_Enable_Sample_Rule.gif
    
-   
-.. note::
-
+.. warning::
    If you copy and paste the above rule filter into the 'filter' section of the rule during the creation process. You will get an error due to syntax      differences in how the quotes are encoded in html versus typed out in the filter input.
    
 .. note::
@@ -131,10 +125,8 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
  
 .. attention:: 
  **Challenge 4** – *Investigate an Alert*
-
-* Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
-
-* First let’s start by selecting any Alert. 
+ * Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
+ * First let’s start by selecting any Alert. 
    * View in **Group View**
    * View in **List View**
    * View **Alert Context**
@@ -142,14 +134,10 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
 .. note::
  More detailed information about alert views refer to the documentation below: https://threatstack.zendesk.com/hc/en-us/articles/205992556-Alert-View
 
-
 What is an Alert? 
 ^^^^^^^^^^^^^^^^^
 
 Alerts are behavior anomalies elevated from the stream of raw telemetry by rule filters, that do not have a corresponding suppression.
-
-
-
 
 
 Alert Lifecycle
@@ -173,13 +161,12 @@ Generally, the alert lifecycle starts when you create a rule on the Threat Stack
 
    For further details on the Alert Lifecycle click here: https://threatstack.zendesk.com/hc/en-us/articles/211881823-Life-Cycle-of-an-Alert
 
+.. attention:: 
+ **Challenge 5** – *Trigger your StudentN Rule*
+ Instinctively (or through this lab) you have created a rule. Apply the Alert Lifecycle to the rule. 
 
-*Challenge 5 – Trigger your StudentN Rule*
+ * First let’s start by **reviewing the Rule**. 
+    * Trigger the StudentN rule. 
+    * Dismiss or Suppress the StudentN rule. 
 
-Instinctively (or through this lab) you have created a rule. Apply the Alert Lifecycle to the rule. 
-
-* First let’s start by **reviewing the Rule**. 
-   * Trigger the StudentN rule. 
-   * Dismiss or Suppress the StudentN rule. 
-
-**Hint**: Watch the Gif
+ **Hint**: Watch the Gif
