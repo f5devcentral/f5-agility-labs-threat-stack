@@ -101,6 +101,10 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
    * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
    
 .. note::
+
+   If you copy and paste the above rule filter into the 'filter' section of the rule during the creation process. You will get an error due to syntax      differences in how the quotes are encoded in html versus typed out in the filter input.
+   
+.. note::
    For further details on Threat Stack Rules click here: https://threatstack.zendesk.com/hc/en-us/articles/4402570308877
 
 
