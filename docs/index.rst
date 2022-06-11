@@ -23,13 +23,8 @@ Additionally, we can become an extension of your security team via our co-manage
 * `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
 
 Through *F5 Agility Labs*, our team has prepared the following labs.
-
-* `Threatstack 201: Getting Started with Cloud Workload Protection`
-* `Threatstack 301: Advanced Cloud Workload Protection`
-
 .. toctree::
    :maxdepth: 3
-   :caption: Contents:
    :glob:
 
    class*/class*
