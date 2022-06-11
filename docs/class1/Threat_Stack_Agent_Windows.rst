@@ -6,7 +6,7 @@ Deploying the Threat Stack Windows Agent
 
 Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into Threat Stack > Click **Servers**. The **Servers** page displays. 
 
-Select **Agent 2.x.** The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your **Windows Sever 2012 or above**. 
+Select **Agent 2.x.** The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your **Windows Server 2012 or above**. 
 
 *Challenge 7 – Install the Threat Stack Windows Agent*
 
