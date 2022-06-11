@@ -72,5 +72,9 @@ then run:
 
    touch yougotpwndStudentN.txt
 
-.. image:: _static/pwned.png
+
+If you navigate to event search and enter the following query and event search, you will see your command.
+
+
+.. image:: _static/pwned.gif
 
