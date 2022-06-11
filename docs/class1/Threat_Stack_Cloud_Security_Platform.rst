@@ -1,17 +1,21 @@
-Threat Stack Cloud Security Platform
-************************************
+Threat Stack Cloud Security Platform®
+*************************************
+
+Welcome to the Threat Stack Cloud Security Platform®
+
+Threat Stack is a SaaS based application that supports host intrusion detection for both on prem as well as cloud workloads. Supporting most major linux distributions, Windows Server, as well as a variety of container and kubernetes offering 
 
 .. image:: _static/_Login.gif
 
 .. attention:: 
- **Challenge 1** – *Access the Threat Stack Cloud Security Platform*
+ **Challenge 1** – *Access the Threat Stack Cloud Security Platform®*
 
  1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
  2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
  3. In the Password field, type **xxxxxxx** as the password and click Next. 
 
 .. note::
- Access to the Threat Stack Cloud Security Platform is managed by the Lab Members.
+ Access to the Threat Stack Cloud Security Platform® is managed by the Lab Members.
 
 Monitoring
 -----------
