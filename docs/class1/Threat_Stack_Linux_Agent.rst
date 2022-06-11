@@ -60,7 +60,18 @@ Let’s begin by configuring some environmental variables for a streamlined lab.
 
   sudo apt-get update && sudo apt-get install threatstack-agent -y && \ 
   sudo tsagent config --set enable_bpf_sensors 1 && \ 
-  sudo tsagent config --set enable_inprogress_connects true && \ 
+  sudo tsagent config --set enable_inprogress_connects true
+  
+  
+Then enter:
+
+  
+.. code-block::
+  
   sudo tsagent setup --deploy-key="$MY_DEPLOY_KEY" --hostname="$MY_HOSTNAME" --ruleset="Base Rule Set" && \ 
   sudo systemctl start threatstack 
-  
+ 
+ 
+.. note::
+
+   You can access your 'deployment-key' from the server UI. Deployment keys are unique per Threat Stack Organization.
