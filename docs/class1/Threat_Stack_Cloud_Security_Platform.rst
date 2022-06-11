@@ -1,15 +1,10 @@
 Threat Stack Cloud Security Platform
 =====================================
 
-.. image:: _static/Dashboard.png
-
-Dashboard
-----------
-
 .. image:: _static/_Login.gif
 
-
 *Challenge 1 – Access the Threat Stack Cloud Security Platform*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
 
@@ -20,14 +15,14 @@ In the Password field, type your account password and click Next.
 .. code-block::
 
    for the lab enter:
-   studentN@dadismad.com
+   StudentN@dadismad.com
    
    for the password enter:
    xxxxxxxxxx
 
 
 .. note::
- Access to the Dashboard is managed by the Lab Members.
+ Access to the Threat Stack Cloud Security Platform is managed by the Lab Members.
 
 Monitoring
 -----------
@@ -39,9 +34,10 @@ For more information on other abilities navigate to our Servers Page Feature Wal
 
 https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
 
-
+###############
 Vulnerabilities
-----------------
+---------------
+
 Threat Stack Agent retrieves a list of installed packages on the host each day and matches against all known Common Vulnerabilities & Exposures (CVEs) captured in the National Vulnerability Database (NVD). It then compares them against the published security notice and triage data from the specific Linux distribution. 
 
 https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
@@ -50,9 +46,9 @@ https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Ass
 
 .. code-block:: console
 
-
+*****************
 AWS EC2 Inventory 
---------------------
+-----------------
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 
 .. image:: _static/_ServerPages_AllEC2.gif
