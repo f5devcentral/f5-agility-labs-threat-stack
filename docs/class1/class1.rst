@@ -1,30 +1,17 @@
-Welcome to F5 Application and Infrastructure Protection (Threat Stack's) Documentation for 201!!
-================================================================================================
-
-**Threat Stack Cloud Security Platform**
+Threat Stack 201: Getting started with Cloud Workload Protection
+================================================================
 
 .. image:: _static/Architecture.png
 
-Threat Stack’s high-efficacy threat detection combines standard rules and ML-based anomaly detection for uncovering both known and unknown threats in cloud-native infrastructure. Threat Stack provides customers with key capabilities and integrations to help overcome modern security and compliance challenges via: 
+Experience a hands-on introduction to Threat Stack's Cloud Security Platform (CSP), a modern security monitoring solution. Gain knowledge through executing terminal commands against the infrastructure, resulting in real-time visibility into cloud workloads. Additionally, rapidly deploy and enable out-of-box use cases that focus on runtime activity, data loss identification, early identification of Advanced Persistent Threats, and compliance issues.
 
-* `File Integrity Monitoring <https://www.threatstack.com/cloud-security-platform/file-integrity-monitoring>`_
+Prerequisites for the lab: 
 
-* `Host-based Intrusion Detection <https://www.threatstack.com/cloud-security-platform/intrusion-detection>`_
-
-* `Container & Kubernetes Security <https://www.threatstack.com/cloud-security-platform/container-security>`_
-
-* `Vulnerability Assessment <https://www.threatstack.com/cloud-security-platform/vulnerability-assessment>`_
-
-* `Cloud Management Console Monitoring <https://www.threatstack.com/use-cases/aws-security/cloudtrail-monitoring>`_
-
-
-Additionally, we can become an extension of your security team via our co-managed services that are supported by human expertise. Our co-managed services are as follows: 
-
-* `Threat Stack Oversight <https://www.threatstack.com/cloud-security-platform/oversight>`_ – 24/7/365 SOC support 
-
-* `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
-
-Check out the :doc:`Threat_Stack_Cloud_Security_Platform` section for further information
+* Access to supported browser (Chrome, Firefox, Safari or Edge)
+* Access to **UDF Deployment – Threat Stack Labs** (Optional)
+* Working knowledge of basic Linux commands
+* Credential/Authentication access through SSH to a remote host with root/admin permissions for Linux
+* Administrator permissions/rights and ability to Remote Desktop Protocol (RDP) to a Windows Server
 
 
 Contents
@@ -35,3 +22,4 @@ Contents
    Threat_Stack_Agent.rst
    Threat_Stack_Playbooks.rst
    
+Click next to begin your lab
