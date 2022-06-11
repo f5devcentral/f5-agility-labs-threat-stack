@@ -1,23 +1,14 @@
 Threat Stack Agent
-=====================================
+==================
 
 Deploying the Threat Stack Agent 
 ---------------------------------
-Before you install the Threat Stack host-based Agent, you must prepare your Linux distribution to work with the Agent. 
 
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
 
 .. image:: _static/_ServerPages_Install.gif
 
-
-
-Check for other Agents
-----------------------
-
-.. note::
-
-   Conflict can occur between the Threat Stack host-based Agent and other tools leveraging these kernels. Before deploying the Agent, ensure no other      tools that use these kernels. This is the result of a known Linux limitation where only one process can bind to the AuditD socket. 
    
 Code Block To Check for Services leveraging audit
 
@@ -175,7 +166,6 @@ To Reload K8 Config
 
     Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection    refused 
    Note: kubectl config view --raw > ~/.kube/config 
-   
    
 
 .. code-block::
