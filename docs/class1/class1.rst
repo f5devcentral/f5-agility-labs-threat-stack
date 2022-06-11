@@ -12,7 +12,6 @@ Experience a hands-on introduction to Threat Stack's Cloud Security Platform (CS
 * Administrator permissions/rights and ability to Remote Desktop Protocol (RDP) to a Windows Server
 
 .. toctree::
-   :maxdepth: 1
    Threat_Stack_Cloud_Security_Platform.rst
    Threat_Stack_Agent.rst
    Threat_Stack_Playbooks.rst
