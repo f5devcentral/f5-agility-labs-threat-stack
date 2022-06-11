@@ -1,35 +1,20 @@
-Welcome to F5 Application and Infrastructure Protection (Threat Stack's) Documentation for 301!!
-================================================================================================
+Threatstack 301: Advanced Cloud Workload Protection
+===================================================
 
-**Threat Stack Cloud Security Platform**
+Explore Threat Stack's Cloud Security Platform (CSP) through in an in-depth look at its the latest security features and how they can be used to protect your cloud workloads. During this hands-on lab, you will learn to interact with Threat Stack's Cloud Security Platform using AI/Automation features such as; Webhook API, RESTful API, and a Python bot. 
 
-.. image:: _static/Architecture.png
+**F5 Agility Lab Prerequisites**: 
 
-Threat Stack’s high-efficacy threat detection combines standard rules and ML-based anomaly detection for uncovering both known and unknown threats in cloud-native infrastructure. Threat Stack provides customers with key capabilities and integrations to help overcome modern security and compliance challenges via: 
-
-* `File Integrity Monitoring <https://www.threatstack.com/cloud-security-platform/file-integrity-monitoring>`_
-
-* `Host-based Intrusion Detection <https://www.threatstack.com/cloud-security-platform/intrusion-detection>`_
-
-* `Container & Kubernetes Security <https://www.threatstack.com/cloud-security-platform/container-security>`_
-
-* `Vulnerability Assessment <https://www.threatstack.com/cloud-security-platform/vulnerability-assessment>`_
-
-* `Cloud Management Console Monitoring <https://www.threatstack.com/use-cases/aws-security/cloudtrail-monitoring>`_
-
-
-Additionally, we can become an extension of your security team via our co-managed services that are supported by human expertise. Our co-managed services are as follows: 
-
-* `Threat Stack Oversight <https://www.threatstack.com/cloud-security-platform/oversight>`_ – 24/7/365 SOC support 
-
-* `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
-
-
-
-Contents
---------
+* Access to supported browser (Chrome, Firefox, Safari or Edge)
+* Access to **UDF Deployment – Threat Stack Labs** (Optional)
+* Working knowledge of basic Linux commands
+* Working knowledge of Python
+* Credential/Authentication access through SSH to a remote host with root/admin permissions for Linux
+* Administrator permissions/rights and ability to Remote Desktop Protocol (RDP) to a Windows Server
 
 .. toctree::
    ThreatML
    Threat_Stack_API
    Self_Protecting_Cloud 
+
+Click next to begin your lab
