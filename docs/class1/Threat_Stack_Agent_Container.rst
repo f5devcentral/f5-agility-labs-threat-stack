@@ -56,7 +56,7 @@ To edit on vim, enter the command 'i' to enter 'insert mode'
    67 agentDeployKey: "PROVIDED_DEPLOYKEY" 
    
 
-.. image:: _static/_config_example_k8s.png
+.. image:: _static/config_example_k8s.png
 
 
 Once you edit the necessary values, then exit by entering the following on vim to write and force quit.
