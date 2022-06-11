@@ -1,7 +1,5 @@
-F5 Agility Labs [year] - Threat Stack
+F5 Agility Labs - Threat Stack
 ==========================================================================
-
-**Threat Stack Cloud Security Platform**
 
 .. image:: class1/_static/Architecture.png
 
@@ -24,13 +22,10 @@ Additionally, we can become an extension of your security team via our co-manage
 
 * `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
 
-Check out the :doc:`Threat_Stack_Cloud_Security_Platform` section for further information
-
 Through *F5 Agility Labs*, our team has prepared the following labs.
-•	Threatstack 201: Getting Started with Cloud Workload Protection
-•	Threatstack 301: Advanced Cloud Workload Protection
 
-Click next to start your journey! 
+* `Threatstack 201: Getting Started with Cloud Workload Protection`
+* `Threatstack 301: Advanced Cloud Workload Protection`
 
 .. toctree::
    :maxdepth: 3
@@ -38,3 +33,5 @@ Click next to start your journey!
    :glob:
 
    class*/class*
+
+Click next to start your journey! 
