@@ -3,7 +3,7 @@ Threat Stack Cloud Security Platform
 
 .. image:: _static/_Login.gif
 
-Challenge 1 – Access the Threat Stack Cloud Security Platform
+**Challenge 1 – Access the Threat Stack Cloud Security Platform**
 
 1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
 2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
@@ -19,14 +19,14 @@ By selecting **Servers Page**, you can filter or change information shown about 
 .. image:: _static/_ServerPages.gif
 
 .. note::
-For a feature walthrough of the Servers Page navigate to: https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
+ For a feature walthrough of the Servers Page navigate to: https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
 
 Vulnerabilities
 ^^^^^^^^^^^^^^^
 Threat Stack Agent retrieves a list of installed packages on the host each day and matches against all known Common Vulnerabilities & Exposures (CVEs) captured in the National Vulnerability Database (NVD). It then compares them against the published security notice and triage data from the specific Linux distribution. 
 
 .. note::
-For a feature walthrough of Vulnerability Assessments navigate here: https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
+ For a feature walthrough of Vulnerability Assessments navigate here: https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
 
 .. image:: _static/_ServerPages_Vulns.gif
 
@@ -37,9 +37,9 @@ AWS EC2 Inventory
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 .. image:: _static/_ServerPages_AllEC2.gif
 
-*Challenge 2 How To Review A Threat Stack Environment*
+**Challenge 2 How To Review A Threat Stack Environment**
 
-Using the information acquired above, start developing context on the infrastructure by reviewing the **servers** page.
+Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
 
 1. Review an Agent
 2. Review AWS EC2 Inventory
