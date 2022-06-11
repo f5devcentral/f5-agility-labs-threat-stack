@@ -1,18 +1,36 @@
-F5 Agility Labs Getting Started Doc
-===================================
+F5 Agility Labs [year] - Threat Stack
+==========================================================================
 
-Welcome to the |classbold| for F5 Agility |year|
+**Threat Stack Cloud Security Platform**
 
-.. attention::
-   The Agility team is using this repo to document our "read-the-docs" process.
+.. image:: class1/_static/Architecture.png
 
-|repoinfo|
+Threat Stack’s high-efficacy threat detection combines standard rules and ML-based anomaly detection for uncovering both known and unknown threats in cloud-native infrastructure. Threat Stack provides customers with key capabilities and integrations to help overcome modern security and compliance challenges via: 
 
-.. note::
-   Each Agility lab is typically broken down by "Class" --> "Module" --> "Lab".
-   Each section uses "toctree" to create the index and reference the content.
-   Using this template should give the contributer several getting-started
-   RST examples.
+* `File Integrity Monitoring <https://www.threatstack.com/cloud-security-platform/file-integrity-monitoring>`_
+
+* `Host-based Intrusion Detection <https://www.threatstack.com/cloud-security-platform/intrusion-detection>`_
+
+* `Container & Kubernetes Security <https://www.threatstack.com/cloud-security-platform/container-security>`_
+
+* `Vulnerability Assessment <https://www.threatstack.com/cloud-security-platform/vulnerability-assessment>`_
+
+* `Cloud Management Console Monitoring <https://www.threatstack.com/use-cases/aws-security/cloudtrail-monitoring>`_
+
+
+Additionally, we can become an extension of your security team via our co-managed services that are supported by human expertise. Our co-managed services are as follows: 
+
+* `Threat Stack Oversight <https://www.threatstack.com/cloud-security-platform/oversight>`_ – 24/7/365 SOC support 
+
+* `Threat Stack Insight <https://www.threatstack.com/cloud-security-platform/insight>`_ – Custom reports tailored to inform and prioritize risk reduction projects to improve your security program.
+
+Check out the :doc:`Threat_Stack_Cloud_Security_Platform` section for further information
+
+Through *F5 Agility Labs*, our team has prepared the following labs.
+•	Threatstack 201: Getting Started with Cloud Workload Protection
+•	Threatstack 301: Advanced Cloud Workload Protection
+
+Click next to start your journey! 
 
 .. toctree::
    :maxdepth: 3
