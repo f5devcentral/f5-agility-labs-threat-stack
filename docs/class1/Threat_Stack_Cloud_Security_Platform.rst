@@ -3,7 +3,9 @@ Threat Stack Cloud Security Platform
 
 .. image:: _static/_Login.gif
 
-.. todo:: Challenge 1 – Access the Threat Stack Cloud Security Platform
+.. todo:: 
+ :header: Challenge 1 – Access the Threat Stack Cloud Security Platform
+ :bgcolor: blue
 
  1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
  2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
