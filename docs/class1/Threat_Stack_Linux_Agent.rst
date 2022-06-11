@@ -68,8 +68,13 @@ Then enter:
   
 .. code-block::
   
-  sudo tsagent setup --deploy-key="$MY_DEPLOY_KEY" --hostname="$MY_HOSTNAME" --ruleset="Base Rule Set" && \ 
-  sudo systemctl start threatstack 
+  sudo tsagent setup --deploy-key="$MY_DEPLOY_KEY" --hostname="$MY_HOSTNAME" --ruleset="Base Rule Set"
+  
+Then enter:
+
+.. code-block::
+   
+   sudo systemctl start threatstack 
  
  
 .. note::
