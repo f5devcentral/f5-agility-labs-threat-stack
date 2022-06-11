@@ -14,6 +14,8 @@ Experience a hands-on introduction to Threat Stack's Cloud Security Platform (CS
 .. toctree::
    Threat_Stack_Cloud_Security_Platform.rst
    Threat_Stack_Agent.rst
+   Threat_Stack_Agent_Windows.rst
+   Threat_Stack_Agent_Container.rst
    Threat_Stack_Playbooks.rst
    
 Click next to begin your lab
