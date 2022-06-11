@@ -17,10 +17,7 @@ Let’s begin by configuring some environmental variables for a streamlined lab.
    $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0" 
    $Env:MY_HOSTNAME="StudentN-Windows" 
 
-.. note::
 
-   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,      “Windows” 
-   
    
 Sysmon Install
 --------------
