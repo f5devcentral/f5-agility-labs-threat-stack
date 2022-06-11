@@ -76,5 +76,5 @@ then run:
 If you navigate to event search and enter the following query and event search, you will see your command.
 
 
-.. image:: _static/pwned.gif
+.. image:: _static/pwned2.gif
 
