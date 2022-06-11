@@ -38,7 +38,13 @@ Helm is a package manager on top of Kubernetes. It facilitates installation, upg
    wget https://raw.githubusercontent.com/threatstack/threatstack-helm/master/values.yaml 
    vim values.yaml 
  
-In the values.yaml, lets update a couple things. First, the **hostname on line 51** so Lab leaders can track activity easily in the lab. Then, agentDeployKey on line 67 with your previously used key and  
+In the values.yaml, lets update a couple things. First, the **hostname on line 51** so Lab leaders can track activity easily in the lab. Then, agentDeployKey on line 67 with your previously used key.
+
+To edit on vim, enter the command 'i' to enter 'insert mode' 
+
+.. code-block::
+   
+   i
 
 
 .. code-block::
@@ -48,6 +54,20 @@ In the values.yaml, lets update a couple things. First, the **hostname on line 5
 .. code-block::
 
    67 agentDeployKey: "PROVIDED_DEPLOYKEY" 
+   
+
+.. image:: _static/_config_example_k8s.png
+
+
+Once you edit the necessary values, then exit by entering the following on vim to write and force quit.
+
+
+.. code-block::
+
+   :wq!
+   
+.. image:: _static/vim_force_quit.png
+   
 
 Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
 
