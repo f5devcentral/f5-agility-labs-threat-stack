@@ -11,10 +11,6 @@ Experience a hands-on introduction to Threat Stack's Cloud Security Platform (CS
 * Credential/Authentication access through SSH to a remote host with root/admin permissions for Linux
 * Administrator permissions/rights and ability to Remote Desktop Protocol (RDP) to a Windows Server
 
-
-Content
---------
-
 .. toctree::
    Threat_Stack_Cloud_Security_Platform.rst
    Threat_Stack_Agent.rst
