@@ -64,7 +64,7 @@ Select the **Options** button to view available configurations for the rule sele
 .. image:: _static/_RulesPage_Drawer.gif
 
 
-Enable/Disable a Rule 
+Rule Edit
 ^^^^^^^^^^^^^^^^^^^^^
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
@@ -74,9 +74,8 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
 .. attention:: 
  **Challenge 3** – *How to use Threat Stack Rules*
 
- * Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
-
- * **Clone any linux host Rule** and perform the following changes: 
+ Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
+ **Clone any linux host Rule** and perform the following changes: 
 
 
  * **Rule Name**
@@ -100,6 +99,7 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
     * (command = "sudo" or command = "su") and user != "root" and type = "start" and syscall = "execve" and tty != null 
 
 **Rule Creation Example**
+
 .. image:: _static/_RuleCreation_Example.gif
    
 .. warning::
@@ -117,16 +117,17 @@ Investigate
 
 By selecting Alerts, you’ll see an organized list sorted by severity, number of occurrences, and time of occurrence. Our rules are generated in real-time and have a retention period of 365 days. This can help you better track the abnormal spikes of alerts and review the behaviors that caused the events. Additional UI details are defined below. 
 
-* Tabs as focus areas: We narrowed in on the well-known concept of browser tabs as focus areas, with in-built default tabs and the ability for customers to create and save their own tabs. Each tab can be customized to match the originating rulesets and/or originating servers (EC2 tags). 
+* **Tabs as focus areas**: We narrowed in on the well-known concept of browser tabs as focus areas, with in-built default tabs and the ability for customers to create and save their own tabs. Each tab can be customized to match the originating rulesets and/or originating servers (EC2 tags). 
 
-* Live alert loading: The Alerts page displays alerts as they come in. It does not delay the loading of alerts coming into the Threat Stack Cloud Security PlatformⓇ (CSP). 
+* **Live alert loading**: The Alerts page displays alerts as they come in. It does not delay the loading of alerts coming into the Threat Stack Cloud Security PlatformⓇ (CSP). 
 
-* Search on alert titles: All tabs have a "Filter by Title" search field. Results appear as the users type in the words in the search bar. 
+* **Search on alert titles**: All tabs have a "Filter by Title" search field. Results appear as the users type in the words in the search bar. 
  
 .. attention:: 
  **Challenge 4** – *Investigate an Alert*
- * Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
- * First let’s start by selecting any Alert. 
+ Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
+ 
+ First let’s start by selecting any Alert. 
    * View in **Group View**
    * View in **List View**
    * View **Alert Context**
@@ -168,5 +169,4 @@ Generally, the alert lifecycle starts when you create a rule on the Threat Stack
  * First let’s start by **reviewing the Rule**. 
     * Trigger the StudentN rule. 
     * Dismiss or Suppress the StudentN rule. 
-
  **Hint**: Watch the Gif
