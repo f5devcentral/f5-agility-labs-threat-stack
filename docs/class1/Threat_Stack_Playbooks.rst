@@ -30,7 +30,7 @@ after you run the command, you should see the following screen.
 .. image:: _static/Spring4ShellScreen.png
 
 
-Go back to UDF and start the linux host again. Then run the following command
+Go back to UDF and open another shell connection the linux host again. Then run the following command
 
 .. code-block::
    
@@ -42,10 +42,11 @@ The following output should manifest.
 .. image:: _static/CurlOutput.png
 
 
-Now to exploit, run the following command in the spring4shell directory.
+Now to exploit, run the following command in the spring4shell directory. Navigate to the spring4shell directory by running the following commands.
 
 .. code-block::
    
+   cd spring4shell
    python3 exploit.py --url 'http://localhost/helloworld/greeting'
    
 The following output should manifest.
