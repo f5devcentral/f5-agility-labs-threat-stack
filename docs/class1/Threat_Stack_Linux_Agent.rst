@@ -1,8 +1,8 @@
-Threat Stack Agent
-==================
+Threat Stack Linux Agent
+========================
 
-Deploying the Threat Stack Agent 
----------------------------------
+Deploying the Threat Stack Host Linux Agent 
+-------------------------------------------
 
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
