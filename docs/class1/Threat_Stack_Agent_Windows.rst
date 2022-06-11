@@ -9,7 +9,9 @@ First, click the 'rdp' pop up to download the file to connect to the instance.
 .. image:: _static/_rdp_connect.png
 
    
+Then, click the rdp file that got downloaded where you will be prompted to provide a password for the 'administrator' user. This password is found under the 'details/credentials' tab of the UDF environment. Enter the password there into the RDP prompt.
 
+.. image:: _static/admin_creds.png
 
 
 
