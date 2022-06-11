@@ -41,6 +41,7 @@ With an Amazon Web Service (AWS) profile integration, the user can see exactly w
 
 .. attention:: 
  **Challenge 2** - *How To Review A Threat Stack Environment*
+ 
  Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
  
  * Review an Agent
@@ -64,7 +65,7 @@ Select the **Options** button to view available configurations for the rule sele
 .. image:: _static/_RulesPage_Drawer.gif
 
 
-Rule Edit
+Rule Editing
 ^^^^^^^^^^^^^^^^^^^^^
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
@@ -125,6 +126,7 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
  
 .. attention:: 
  **Challenge 4** – *Investigate an Alert*
+ 
  Let’s put our Security Analyst hats on and start developing context surrounding the Alerts activity. 
  
  First let’s start by selecting any Alert. 
@@ -164,9 +166,9 @@ Generally, the alert lifecycle starts when you create a rule on the Threat Stack
 
 .. attention:: 
  **Challenge 5** – *Trigger your StudentN Rule*
+ 
  Instinctively (or through this lab) you have created a rule. Apply the Alert Lifecycle to the rule. 
 
  * First let’s start by **reviewing the Rule**. 
     * Trigger the StudentN rule. 
-    * Dismiss or Suppress the StudentN rule. 
- **Hint**: Watch the Gif
+    * Dismiss or Suppress the StudentN rule.
