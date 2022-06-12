@@ -1,8 +1,8 @@
 Threat Stack Linux Agent
 ========================
 
-Deploying the Threat Stack Host Linux Agent 
--------------------------------------------
+Deploying the Threat Stack Linux Agent 
+---------------------------------------
 
 The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
@@ -27,7 +27,8 @@ Select **+ Add New Server** and the Command Builder dialog will display. Select 
 .. attention::
    **Challenge 6** – *Install the Threat Stack Linux Agent*
    
-   
+.. image:: _static/_Install_Linux_CLI.gif
+
 Let’s begin by configuring some environmental variables for a streamlined lab. Replace the **StudentN**-Linux with your information. 
 
 .. code-block::
