@@ -79,7 +79,6 @@ Now that we have our values.yaml file updated, lets deploy the Threat Stack Cont
 .. code-block::
 
    helm repo add threatstack https://pkg.threatstack.com/helm 
-   "threatstack" has been added to your repositories 
 
 
 .. code-block::
