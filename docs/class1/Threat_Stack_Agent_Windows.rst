@@ -2,7 +2,7 @@ Threat Stack Windows Agent
 ==========================
 
 Connecting to the Windows Machine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------
 
 First, select **'RDP'** pop up to download the .rdp file to connect to the Windows instance.
 
@@ -22,7 +22,7 @@ The Threat Stack windows-based Agent uses the Windows Events & Sysmon to collect
 
 
 Install the Threat Stack Agent
-------------------------------
+-------------------------------
 *Prerequisites*
 
 * Access to the Threat Stack Console
@@ -42,10 +42,10 @@ Select **+ Add New Server** and the Command Builder dialog will display. Select 
 .. attention::
    **Challenge 7** – *Install the Threat Stack Windows Agent*
 
-Let’s begin by deciding the method of instalation, Install Wizard or PowerShell.
+Let’s begin by deciding the method of instalation, Wizard Install or PowerShell.
 
-Install Wizard
-^^^^^^^^^^^^^^^^^^^^^^
+Wizard Install
+^^^^^^^^^^^^^^^
 
 Using the local browser, download the msi installer using this link: 
 
@@ -112,7 +112,7 @@ Download and install the Threat Stack Windows Agent.
 
 
 Sysmon Install
-===============
+--------------
 
 Run the following commands from powershell/terminal:
 
