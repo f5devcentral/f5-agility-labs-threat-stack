@@ -42,13 +42,40 @@ Select **+ Add New Server** and the Command Builder dialog will display. Select 
 .. attention::
    **Challenge 7** – *Install the Threat Stack Windows Agent*
 
-Let’s begin by deciding the method of instalation, Windows Install Wizard or PowerShell.
+Let’s begin by deciding the method of instalation, Install Wizard or PowerShell.
 
-**Windows Install Wizard**
+Install Wizard
+^^^^^^^^^^^^^^^^^^^^^^
 
-Working on it... 
+Using the local browser, download using this link: https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi
 
-**PowerShell** 
+Double click the **Threat+Stack+Cloud+Security+Agent.latest.msi** which usually goes to Downloads folder by default. 
+
+**Deployment Key**
+
+.. code-block::
+
+   979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0
+   
+**Ruleset Name**
+
+.. code-block::
+
+   Windows Rule Set
+   
+
+.. image:: _static/_Install_Windows.png
+   :align: center
+
+
+.. image:: _static/_Install_Windows_Config.png
+   :align: center
+
+.. image:: _static/_Install_Windows_Deploy.png
+   :align: center
+
+PowerShell 
+^^^^^^^^^^
 
 Open PowerShell and configure environmental variables for a streamlined lab.
 
