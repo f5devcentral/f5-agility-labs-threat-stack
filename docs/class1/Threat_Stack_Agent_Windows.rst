@@ -114,6 +114,14 @@ Download and install the Threat Stack Windows Agent.
 Sysmon Install
 --------------
 
+System Monitor (Sysmon) is a Windows system service that monitors and logs system activity. Freely available at the link below.
+
+.. code-block::
+
+
+   https://download.sysinternals.com/files/Sysmon.zip
+
+
 Run the following commands from powershell/terminal:
 
 .. code-block::
