@@ -76,10 +76,14 @@ Once you edit the necessary values, then exit by entering the following on vim t
 
 Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
 
+Now lets **Add the Helm Repo**
+
 .. code-block::
 
    helm repo add threatstack https://pkg.threatstack.com/helm 
 
+
+**Run Helm Install** to Deploy Threat Stack to the K8 Cluster
 
 .. code-block::
 
