@@ -62,7 +62,7 @@ Download and install the Threat Stack Windows Agent.
 
 .. code-block::
 
-   cd C:\Users\Administrator\Downloads\
+   cd 'C:\Users\Administrator\Downloads\'
    wget https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi -OutFile Threat+Stack+Cloud+Security+Agent.latest.msi
    msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME
 
