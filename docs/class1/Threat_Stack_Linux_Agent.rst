@@ -28,11 +28,12 @@ Select **+ Add New Server** and the Command Builder dialog will display. Select 
    **Challenge 6** – *Install the Threat Stack Linux Agent*
    
    
-Let’s begin by configuring some environmental variables for a streamlined lab.
+Let’s begin by configuring some environmental variables for a streamlined lab. Replace the **StudentN**-Linux with your information. 
 
 .. code-block::
-   MY_DEPLOY_KEY = 'XXXXXXXXX'
-   MY_HOSTNAME= 'StudentN-Linux'   
+
+  MY_DEPLOY_KEY = 'XXXXXXXXX'
+  MY_HOSTNAME= 'StudentN-Linux'   
 
 .. warning::
    Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled, **“Linux”**
