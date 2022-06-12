@@ -20,6 +20,10 @@ Container Distributions
    * Base Rule Set 
    * Docker Rule Set 
    * Kubernetes Rule Set
+   
+
+.. attention::
+   **Challenge 8** – *Install the Threat Stack Container Agent*
 
 
 Install using Helm  
@@ -32,13 +36,12 @@ Helm is a package manager on top of Kubernetes. It facilitates installation, upg
 * Helm installed 
 * Configured Values file 
 
+.. warning::
 
-.. attention::
-   **Challenge 8** – *Install the Threat Stack Container Agent*
+   Use only the command provided to install the Threat Stack Container Agent. Using UDF, establish a Terminal session with the host labelled, **“K8S”**. 
 
-.. note::
 
-   Warning: Use only the command provided to install the Threat Stack Container Agent. Using UDF, establish a Terminal session with the host labelled, **“K8S”**. 
+Let's begin by downloading the values.yaml file used to configure the Helm Chart. 
 
 
 .. code-block::
