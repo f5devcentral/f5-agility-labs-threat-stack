@@ -47,7 +47,12 @@ Let’s begin by deciding the method of instalation, Install Wizard or PowerShel
 Install Wizard
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Using the local browser, download the msi installer using this link: https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi
+Using the local browser, download the msi installer using this link: 
+
+.. code-block::
+
+
+   https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi
 
 Navigate to the Downloads folder, now double click the **Threat+Stack+Cloud+Security+Agent.latest.msi**
 
