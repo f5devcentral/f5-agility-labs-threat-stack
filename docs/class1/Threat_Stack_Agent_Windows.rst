@@ -7,11 +7,13 @@ Connecting to the Windows Machine
 First, select **'RDP'** pop up to download the .rdp file to connect to the Windows instance.
 
 .. image:: _static/_rdp_connect.png
+   :align: center
    :scale: 50%
    
 Then, open the rdp file with your prefferred Microsoft RDP Desktop tool. You will be prompted requesting a password for the **'administrator'** user. The Windows instance password is found under the **'details/credentials'** tab of the UDF environment. Enter the password there into the RDP prompt.
 
 .. image:: _static/admin_creds.png
+   :align: center
    :scale: 50%
 
 
