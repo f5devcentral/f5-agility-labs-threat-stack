@@ -13,7 +13,7 @@ Install the Threat Stack Agent
 
 * Access to the Threat Stack Console
 * Access to host either via CLI or RDP on a supported Operating System architecture(ARM or x86 architecture)
-* Access to a supported browser (Chrome, Edge, Safi, and Firefox)
+* Access to a supported browser (Chrome, Edge, Safari, and Firefox)
 
 Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into **Threat Stack > Click Servers**.
 
