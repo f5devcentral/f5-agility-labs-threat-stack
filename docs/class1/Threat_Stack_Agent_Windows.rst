@@ -18,24 +18,55 @@ Then, open the rdp file with your prefferred Microsoft RDP Desktop tool. You wil
 Deploying the Threat Stack Windows Agent 
 ----------------------------------------
 
-Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into Threat Stack > Click **Servers**. The **Servers** page displays. 
-
-Select **Agent 2.x.** The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your **Windows Server 2012 or above**.
+The Threat Stack windows-based Agent uses the Windows Events & Sysmon to collect file, network, and process data.
 
 
- 
+Install the Threat Stack Agent
+------------------------------
+*Prerequisites*
 
-*Challenge 7 – Install the Threat Stack Windows Agent*
+* Access to the Threat Stack Console
+* Access to host either via CLI or RDP on a supported Operating System architecture(ARM or x86 architecture)
+* Access to a supported browser (Chrome, Edge, Safari, and Firefox)
 
-Let’s begin by configuring some environmental variables for a streamlined lab. Let’s open **PowerShell**
+Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into **Threat Stack > Click Servers**.
+
+.. image:: _static/_ServerPages_Install.gif
+
+Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into **Threat Stack > Click Servers**.
+
+*Windows Distributions*
+
+Select **+ Add New Server** and the Command Builder dialog will display. Select **Agent 2.X.X** to proceed to the set of instructions below, specific to your Windows distribution. 
+
+.. attention::
+   **Challenge 7** – *Install the Threat Stack Windows Agent*
+
+Let’s begin by deciding the method of instalation, Windows Install Wizard or PowerShell.
+
+**Windows Install Wizard**
+
+Working on it... 
+
+**PowerShell** 
+
+Open PowerShell and configure environmental variables for a streamlined lab.
 
 .. code-block::
 
-   $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0" 
-   $Env:MY_HOSTNAME="StudentN-Windows" 
+   $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0"
+   $Env:MY_HOSTNAME="StudentN-Windows"
 
 
-   
+Download and install the Threat Stack Windows Agent.
+
+.. code-block::
+
+   cd C:\Users\Administrator\Downloads\
+   wget https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi -OutFile Threat+Stack+Cloud+Security+Agent.latest.msi
+   msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME
+
+
 Sysmon Install
 --------------
 
