@@ -51,6 +51,16 @@ Using the local browser, download the msi installer using this link: https://pkg
 
 Navigate to the Downloads folder, now double click the **Threat+Stack+Cloud+Security+Agent.latest.msi**
 
+
+Follow the images below for further details on utilizing the installation wizard.
+
+
+.. image:: _static/_Install_Windows.png
+   :align: center
+   :scale: 50%
+
+Configure the Threat Stack Windows Agent. 
+
 .. note::
 
    **Deployment Key**
@@ -61,22 +71,18 @@ Navigate to the Downloads folder, now double click the **Threat+Stack+Cloud+Secu
    **Ruleset Name**
    
    Windows Rule Set
-   
-
-Follow the images below for further details on utilizing the installation wizard.
-
-
-.. image:: _static/_Install_Windows.png
-   :align: center
-
 
 .. image:: _static/_Install_Windows_Config.png
    :align: center
+   :scale: 50%   
    
+Finalize instalation. 
 
 .. image:: _static/_Install_Windows_Deploy.png
    :align: center
-
+   :scale: 50%
+   
+   
 .. warning::
    Sysmon installation is completed separately
 
