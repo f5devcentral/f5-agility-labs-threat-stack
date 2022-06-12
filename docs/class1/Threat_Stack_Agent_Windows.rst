@@ -47,22 +47,24 @@ Let’s begin by deciding the method of instalation, Install Wizard or PowerShel
 Install Wizard
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Using the local browser, download using this link: https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi
+Using the local browser, download the msi installer using this link: https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi
 
-Double click the **Threat+Stack+Cloud+Security+Agent.latest.msi** which usually goes to Downloads folder by default. 
+Navigate to the Downloads folder, now double click the **Threat+Stack+Cloud+Security+Agent.latest.msi**
 
-**Deployment Key**
+.. note::
 
-.. code-block::
-
+   **Deployment Key**
+   
    979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0
    
-**Ruleset Name**
-
-.. code-block::
-
+   
+   **Ruleset Name**
+   
    Windows Rule Set
    
+
+Follow the images below for further details on utilizing the installation wizard.
+
 
 .. image:: _static/_Install_Windows.png
    :align: center
@@ -70,9 +72,13 @@ Double click the **Threat+Stack+Cloud+Security+Agent.latest.msi** which usually 
 
 .. image:: _static/_Install_Windows_Config.png
    :align: center
+   
 
 .. image:: _static/_Install_Windows_Deploy.png
    :align: center
+
+.. warning::
+   Sysmon installation is completed separately
 
 PowerShell 
 ^^^^^^^^^^
