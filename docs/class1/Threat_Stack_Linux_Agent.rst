@@ -9,20 +9,6 @@ The Threat Stack host-based Agent uses the Linux Audit Framework to collect file
 
 .. image:: _static/_ServerPages_Install.gif
 
-   
-Code Block To Check for Services leveraging audit
-
-.. code-block::
-
-   ps aux | grep audit
-
-
-Code Block to Check for The Threat Stack Agent on the machine
-
-.. code-block:: 
-   
-   sudo tsagent status
-
 
 Install the Threat Stack Agent
 ------------------------------
@@ -36,26 +22,22 @@ Install the Threat Stack Agent
 
 *Linux Distributions*
 
-Threat Stack automatically walks customers through an Agent install on the Servers page. Log into Threat Stack > Click Servers. The Servers page displays.
+Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into **Threat Stack > Click Servers**.
 
-Select Agent 2.x. The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux distribution. 
+Select **+ Add New Server** and the Command Builder dialog will display. Select **Agent 2.X.X** to proceed to the set of instructions below, specific to your Linux distribution. 
 
-*Challenge 6 – Install the Threat Stack Linux Agent*
-
-Let’s begin by configuring some environmental variables for a streamlined lab.
-
-
-.. code-block:: 
+.. attention::
+   **Challenge 6** – *Install the Threat Stack Linux Agent*
    
+   Let’s begin by configuring some environmental variables for a streamlined lab.
+
+.. code-block::
    MY_DEPLOY_KEY = 'XXXXXXXXX'
-   MY_HOSTNAME= 'StudentN-Linux'
-   
+   MY_HOSTNAME= 'StudentN-Linux'   
 
-.. note::
-
-   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,     “Linux” 
-   
-   
+.. warning::
+   Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled, “Linux”
+      
 .. code-block::
 
   sudo apt-get update && sudo apt-get install threatstack-agent -y && \ 
