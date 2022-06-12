@@ -87,8 +87,10 @@ Now that we have our values.yaml file updated, lets deploy the Threat Stack Cont
    helm install threatstack-agent --values values.yaml threatstack/threatstack-agent 
    
 
-K8 Error - Connection Refused 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+K8 Error 
+^^^^^^^^
+
+**Connection Refused**
 
 If you are experiencing the following error
 
