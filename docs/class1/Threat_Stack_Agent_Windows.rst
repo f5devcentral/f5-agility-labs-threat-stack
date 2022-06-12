@@ -112,7 +112,7 @@ Download and install the Threat Stack Windows Agent.
 
 
 Sysmon Install
---------------
+===============
 
 Run the following commands from powershell/terminal:
 
