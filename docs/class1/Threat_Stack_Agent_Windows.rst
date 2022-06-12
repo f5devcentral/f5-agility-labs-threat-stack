@@ -2,17 +2,17 @@ Threat Stack Windows Agent
 ==========================
 
 Connecting to the Windows Machine
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First, click the 'rdp' pop up to download the file to connect to the instance.
+First, select **'RDP'** pop up to download the .rdp file to connect to the Windows instance.
 
 .. image:: _static/_rdp_connect.png
-
+   :scale: 50%
    
-Then, click the rdp file that got downloaded where you will be prompted to provide a password for the 'administrator' user. This password is found under the 'details/credentials' tab of the UDF environment. Enter the password there into the RDP prompt.
+Then, open the rdp file with your prefferred Microsoft RDP Desktop tool. You will be prompted requesting a password for the **'administrator'** user. The Windows instance password is found under the **'details/credentials'** tab of the UDF environment. Enter the password there into the RDP prompt.
 
 .. image:: _static/admin_creds.png
-
+   :scale: 50%
 
 
 Deploying the Threat Stack Windows Agent 
