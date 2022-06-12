@@ -57,7 +57,7 @@ Follow the images below for further details on utilizing the installation wizard
 
 .. image:: _static/_Install_Windows.png
    :align: center
-   :scale: 25%
+   :scale: 75%
 
 Configure the Threat Stack Windows Agent. 
 
@@ -74,13 +74,13 @@ Configure the Threat Stack Windows Agent.
 
 .. image:: _static/_Install_Windows_Config.png
    :align: center
-   :scale: 25%   
+   :scale: 75%   
    
 Finalize instalation. 
 
 .. image:: _static/_Install_Windows_Deploy.png
    :align: center
-   :scale: 25%
+   :scale: 75%
    
    
 .. warning::
