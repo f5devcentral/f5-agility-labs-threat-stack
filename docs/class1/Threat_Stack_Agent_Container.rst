@@ -15,10 +15,11 @@ Container Distributions
 * Access to a supported browser (Chrome, Edge, Safari, and Firefox)
  
 .. note::
-   Container enabled environments have the following rulesets by default. 
+   Container enabled environments have the following rulesets by default.
+   
    * Base Rule Set 
    * Docker Rule Set 
-   * Kubernetes Rule Set (Optional)
+   * Kubernetes Rule Set
 
 
 Install using Helm  
