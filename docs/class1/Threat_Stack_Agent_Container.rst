@@ -49,11 +49,11 @@ Let's begin by downloading the values.yaml file used to configure the Helm Chart
    wget https://raw.githubusercontent.com/threatstack/threatstack-helm/master/values.yaml 
    vim values.yaml 
  
-In the values.yaml, lets update a couple things. First, the **hostname on line 51** so lab participants can track activity easily in the lab. Next, lets update the agentDeployKey on line 67 with your previously used key.
+In the values.yaml, lets update a couple things. First, the **hostname on line 51** so lab participants can track activity easily in the lab. Next, lets update the **agentDeployKey on line 67** with your previously used key.
 
 .. code-block::
 
-   51 additionalSetupConfig: "--hostname=StudentN " 
+   51 additionalSetupConfig: "--hostname=StudentN" 
    
 .. code-block::
 
@@ -61,7 +61,7 @@ In the values.yaml, lets update a couple things. First, the **hostname on line 5
    
 
 .. image:: _static/config_example_k8s.png
-
+   :scale: 75%
 
 Once you edit the necessary values, then exit by entering the following on vim to write and force quit.
 
@@ -71,6 +71,7 @@ Once you edit the necessary values, then exit by entering the following on vim t
    :wq!
    
 .. image:: _static/vim_force_quit.png
+   :scale: 75%
    
 
 Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
@@ -86,10 +87,20 @@ Now that we have our values.yaml file updated, lets deploy the Threat Stack Cont
    helm install threatstack-agent --values values.yaml threatstack/threatstack-agent 
    
 
-Reload K8 Config 
-^^^^^^^^^^^^^^^^
+K8 Error - Connection Refused 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
+If you are experiencing the following error
 
-    Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection    refused 
-   Note: kubectl config view --raw > ~/.kube/config
+.. code-block::
+
+
+   Error: INSTALLATION FAILED: Kubernetes cluster unreachable: Get "http://localhost:8080/version": dial tcp 127.0.0.1:8080: connect: connection refused
+
+Execute the following command to reload the K8 config file. 
+
+
+.. code-block::
+
+   
+   kubectl config view --raw > ~/.kube/config
