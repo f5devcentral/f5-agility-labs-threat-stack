@@ -54,11 +54,11 @@ In the values.yaml, lets update a couple things. First, the **hostname on line 5
 
 .. code-block::
 
-   51 additionalSetupConfig: "--hostname=StudentN" 
+   51 additionalSetupConfig: "--hostname=**$MY_HOSTNAME**" 
    
 .. code-block::
 
-   67 agentDeployKey: "XXXXXXXXXXXXXXXXX" 
+   67 agentDeployKey: "**$MY_DEPLOY_KEY**" 
    
 
 Once you edit the necessary values, then exit by entering the following on vim to write and force quit.
