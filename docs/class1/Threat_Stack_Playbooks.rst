@@ -7,11 +7,12 @@ Spring4Shell Playbook
 First, Access the Linux Ubuntu 20.04 LTS Box via WebShell.
 
 .. image:: _static/UbuntuWebshell.png
-   :scale: 75%
+   :scale: 50%
 
 
 
 Next, navigate to the /spring4shell/ directory found in root by entering the following command:
+
 
 .. code-block::
    
@@ -20,7 +21,7 @@ Next, navigate to the /spring4shell/ directory found in root by entering the fol
    
    
 .. image:: _static/CDDirectoryCommand.png
-   :scale: 75%
+   :scale: 50%
 
 
 
