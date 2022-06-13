@@ -54,7 +54,7 @@ Now to exploit, run the following command in the spring4shell directory. Navigat
 
 .. code-block::
    
-   cd spring4shell
+   cd /spring4shell/
    python3 exploit.py --url 'http://localhost/helloworld/greeting'
    
 The following output should manifest.
