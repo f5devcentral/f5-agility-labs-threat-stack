@@ -24,8 +24,8 @@ Python Bot Setup
 ----------------
 The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
 
-Configure AWS CLI 
-^^^^^^^^^^^^^^^
+Check AWS CLI 
+^^^^^^^^^^^^^^
 .. image:: _static/_AWS_ConfigCheck.gif
 
 .. code-block::
@@ -39,10 +39,10 @@ Configure AWS CLI
   region                us-east-1      config-file    ~/.aws/config 
   
       
-Let's configure our **AWS CLI** and **AWS Networking Infrastructure**. 
+Now that we have confirmed no active AWS CLI Configuration. Let's configure our **AWS CLI** and **AWS Networking Infrastructure**. 
 
 Configure AWS CLI
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, Access Key and AWS Secret Key.
 
 
@@ -85,10 +85,8 @@ Step 2: Make the credentials directory
    
 
 Launch Python Bot
-^^^^^^^^^^^^^^^^^
-
-
-Using the RuleID to detect the activity and the AWS NACL ID. 
+-----------------
+Use the RuleID provided below to detect Network outbound connection to WAN and then auto add the CIDR block to the AWS NACL ID. The AWS VPC will block the added CIDR Block in near-realtime. 
 
 .. note::
    Please use the following RuleID: 654db236-e367-11ec-8b40-8bde98a291cb
@@ -122,7 +120,7 @@ Execute Command
  
 
 Terminal Results 
-
+^^^^^^^^^^^^^^^^
 The following is a sample of the resulting terminal activity from the command which executes the malware. 
 
 
