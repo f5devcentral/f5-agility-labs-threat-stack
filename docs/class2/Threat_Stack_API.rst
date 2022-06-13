@@ -8,7 +8,7 @@ Threat Stack offers two types of APIs – **Webhooks API** and **RESTful API**.
  
 
 Webhook API 
-^^^^^^^^^^^
+-----------
 
 Webhooks allow Threat Stack users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. Threat Stack sends alert details in JSON format through HTTPS Post. A third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to integrate Threat Stack Alert Webhooks into your existing applications and workflows 
 
@@ -36,7 +36,7 @@ To view the Webhook configuration, you can find these in the **Threat Stack UI >
 
 
 RESTFul API 
-^^^^^^^^^^^
+-----------
 
 The Threat Stack API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The Threat Stack API manages endpoints via the standard HTTP methods.  
 
@@ -49,13 +49,15 @@ All requests for the API use the same host:
 
 .. image:: _static/_APIDOCS.gif
 
-**Configuring API Environment**
+Configuring API Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The variables below are required to authenticate against the Threat Stack Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
 
 .. image:: _static/_Integrations_Keys.gif
 
-**Environmental Variables**
+Environmental Variables
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let’s begin by gather these variables, you can find these in the **Threat Stack UI > Settings > Application Keys**
 
