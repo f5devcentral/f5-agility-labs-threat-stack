@@ -7,8 +7,8 @@ Self-Protecting Cloud
 
 Leveraging the Threat Stack API and simple code enables a host to proactively respond to activity automatically.  
 
-Confirm Python Environment
-
+Confirm Python
+^^^^^^^^^^^^^^^
 .. code-block::
 
    python3 -V 
@@ -16,6 +16,8 @@ Confirm Python Environment
 
 
 Confirm AWS CLI 
+^^^^^^^^^^^^^^^
+.. image:: _static/_AWS_ConfigCheck.gif
 
 .. code-block::
 
@@ -26,14 +28,18 @@ Confirm AWS CLI
   access_key     ****************M2OT shared-credentials-file 
   secret_key     ****************ZtuZ shared-credentials-file 
   region                us-east-1      config-file    ~/.aws/config 
-
+  
 
 .. note::
 
-   Note: If not configured, configure the aws cli using the UDF Deployment Cloud Account. 
+   If not configured, configure the aws cli using the UDF Deployment Cloud Account. 
    
-  
-Building Network Infrastructure 
+Configure AWS CLI
+^^^^^^^^^^^^^^^^^^^
+.. image:: _static/_AWS_AddConfig.gif
+
+Configure AWS Network Infrastructure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Step 1: Create the VPC
 
@@ -50,7 +56,8 @@ Step 2: Grab the NetworkAclId
  
  
 Python Bot Setup 
-----------------
+^^^^^^^^^^^^^^^^
+
 The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
 
 
@@ -74,7 +81,7 @@ Step 2: Make the directory
    
 
 Launch Python Bot
------------------
+^^^^^^^^^^^^^^^^^
 
 
 Using the RuleID to detect the activity and the AWS NACL ID. 
