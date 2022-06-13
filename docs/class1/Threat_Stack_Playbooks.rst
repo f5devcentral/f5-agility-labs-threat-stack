@@ -72,8 +72,11 @@ then run:
 
    touch yougotpwndStudentN.txt
 
-
 If you navigate to event search and enter the following query and event search, you will see your command.
+
+.. code-block::
+
+   event_type = "audit" and command = "touch"
 
 
 .. image:: _static/pwned2.gif
