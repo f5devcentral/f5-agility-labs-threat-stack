@@ -31,12 +31,6 @@ Check AWS CLI
 .. code-block::
 
   aws configure list 
-  Name                    Value             Type    Location 
-  ----                    -----             ----    -------- 
-  profile                <not set>             None    None 
-  access_key     ****************M2OT shared-credentials-file 
-  secret_key     ****************ZtuZ shared-credentials-file 
-  region                us-east-1      config-file    ~/.aws/config 
   
       
 Now that we have confirmed no active AWS CLI Configuration. Let's configure our **AWS CLI** and **AWS Networking Infrastructure**. 
@@ -63,7 +57,7 @@ Step 2: Grab the NetworkAclId
 .. code-block::
 
    aws ec2 describe-network-acls | grep NetworkAclId 
-   "NetworkAclId": "acl-01d98e20381b55f72" 
+   "NetworkAclId": "acl-XXXXXXXXXXX" 
 
 Step 1: Update Threat Stack Credentials File 
 
@@ -75,7 +69,7 @@ Step 1: Update Threat Stack Credentials File
    ts_user=USER 
    ts_key=KEY 
    
-Step 2: Make the credentials directory
+Step 2: Copy and move credentials into created directory
 
 
 .. code-block::
@@ -86,35 +80,23 @@ Step 2: Make the credentials directory
 
 Launch Python Bot
 -----------------
-Use the RuleID provided below to detect Network outbound connection to WAN and then auto add the CIDR block to the AWS NACL ID. The AWS VPC will block the added CIDR Block in near-realtime. 
+Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. 
+
+**RuleID: 654db236-e367-11ec-8b40-8bde98a291cb**
 
 .. note::
-   Please use the following RuleID: 654db236-e367-11ec-8b40-8bde98a291cb
    Rule can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**
-
-
 
 .. code-block::
 
-   python3 .threatstack/integration.py --watchrule RuleID --aws_acl_id ACLID 
-   
-   python3 integration.py --watchrule 94ec898e-cb04-11ec-9994-c901909a56dc --aws_acl_id acl-01d98e20381b55f72 
-   
-   python3 integration.py --watchrule 94ec898e-cb04-11ec-9994-c901909a56dc --aws_acl_id acl-01d98e20381b55f72 
-   
-   Alert poll returned destination set() source [] to block at the firewall 
-   Alert poll returned destination set() source [] to block at the firewall 
-   Alert poll returned destination set() source [] to block at the firewall 
-   Alert poll returned destination set() source [] to block at the firewall 
-   Alert poll returned destination set() source [] to block at the firewall 
-   Alert poll returned destination set() source [] to block at the firewall 
-   
+   python3 .threatstack/integration.py --watchrule **RuleID** --aws_acl_id **ACLID** 
+
 
 Execute Command 
 
 .. code-block::
    
-   wget dadismad.com 
+   curl dadismad.com
    
 
  
