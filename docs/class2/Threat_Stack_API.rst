@@ -1,30 +1,28 @@
 Threat Stack API
 ================
 
-Threat Stack offers two types of APIs – Webhooks and RESTful API. 
+Threat Stack offers two types of APIs – **Webhooks API** and **RESTful API**. 
 
-* The Webhooks API pushes trigger-based alerts to a specific URL and allows Threat Stack users to operationalize the alerts in near-real time. 
-* The RESTful API allows the user to write queries to access Threat Stack information about organization-specific security concerns. 
+* The **Webhooks API** pushes trigger-based alerts to a specific URL and allows Threat Stack users to operationalize the alerts in near-real time. 
+* The **RESTful API** allows the user to write queries to access Threat Stack information about organization-specific security concerns. 
  
 
 Webhook API 
 ^^^^^^^^^^^
 
-.. image:: _static/_Integrations_Webhook.gif
-
 Webhooks allow Threat Stack users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. Threat Stack sends alert details in JSON format through HTTPS Post. A third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to integrate Threat Stack Alert Webhooks into your existing applications and workflows 
+
+.. image:: _static/_Integrations_Webhook.gif
 
 To view the Webhook configuration, you can find these in the **Threat Stack UI > Settings > Integrations**
 
 
 .. note:: 
 
-   Webhook sends alerts through HTTPS POST, the Webhook URL must be HTTPS. Additionally, for information on ingress settings: https://threatstack.zendesk.com/hc/en-us/articles/115000295950-Configure-Webhook-Network-Access 
+   Webhook sends alerts through HTTPS POST, the Webhook URL must be HTTPS.
    
    
-
 .. image:: _static/_Integrations_Webhook_LiveEx.gif
-
 
 
 .. attention::
@@ -40,8 +38,6 @@ To view the Webhook configuration, you can find these in the **Threat Stack UI >
 RESTFul API 
 ^^^^^^^^^^^
 
-.. image:: _static/_APIDOCS.gif
-
 The Threat Stack API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The Threat Stack API manages endpoints via the standard HTTP methods.  
 
 All requests for the API use the same host: 
@@ -51,17 +47,17 @@ All requests for the API use the same host:
    https://api.threatstack.com/v2/ 
    
 
+.. image:: _static/_APIDOCS.gif
+
 **Configuring API Environment**
 
 The variables below are required to authenticate against the Threat Stack Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
 
+.. image:: _static/_Integrations_Keys.gif
 
 **Environmental Variables**
 
 Let’s begin by gather these variables, you can find these in the **Threat Stack UI > Settings > Application Keys**
-
-
-.. image:: _static/_Integrations_Keys.gif
 
 **Key variables and their meaning**
 
@@ -71,11 +67,14 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
 
 * **TS_ORGANIZATION_ID / HAWK Ext** - Organization ID of the organization to access 
 
+.. note::
+
+   We **recommend using our UDF Linux Host** but any host with python will work.  
+
 
 .. attention::
    **Challenge 3** – *Configure API & First Request*
 
-   We **recommend using our UDF Linux Host** but any host with python will work.  
 
 1. Clone a copy of Threat Stack API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
 
@@ -93,16 +92,24 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
    sudo apt install python3-pip 
 
 
-3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. Edit the **threatstack.cfg.sample** to update with your **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID** under the [USER_INFO] and [DEFAULT] sections of the text file.
+3. Navigate to the clone GitHub directory, specifically **GetAllAgents**. 
 
 .. code-block:: 
 
    cd GetAllAgents 
+   
+
+4. Edit the **threatstack.cfg.sample** to update [USER_INFO] and [DEFAULT] with your 
+   **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. Lastly, rename **threatstack.cfg.sample** to **threatstack.cfg** in the same directory
+
+
+.. code-block:: 
+
    vim threatstack.cfg.sample  
    cp threatstack.cfg.sample threatstack.cfg 
-  
-  
-4. Run it!
+
+
+5. Run it!
 
 .. code-block:: 
 
