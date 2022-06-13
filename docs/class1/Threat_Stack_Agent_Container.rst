@@ -57,7 +57,7 @@ In the values.yaml, lets update a couple things. First, the **hostname on line 5
    
 .. code-block::
 
-   67 agentDeployKey: "PROVIDED_DEPLOYKEY" 
+   67 agentDeployKey: "979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0" 
    
 
 .. image:: _static/config_example_k8s.png
@@ -74,16 +74,16 @@ Once you edit the necessary values, then exit by entering the following on vim t
    :scale: 75%
    
 
-Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
+Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent using Helm. We start by first adding the repo following a helm install to deploy Threat Stack to the K8 Cluster.  
 
-Now lets **Add the Helm Repo**
+**Add the Helm Repo**
 
 .. code-block::
 
    helm repo add threatstack https://pkg.threatstack.com/helm 
 
 
-**Run Helm Install** to Deploy Threat Stack to the K8 Cluster
+**Run Helm Install**
 
 .. code-block::
 
