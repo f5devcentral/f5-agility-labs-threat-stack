@@ -72,7 +72,7 @@ Configure the Threat Stack Windows Agent.
 
    **Deployment Key**
    
-   979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0
+   XXXXXXXXXXXXXXXX
    
    
    **Ruleset Name**
@@ -100,7 +100,7 @@ Open PowerShell and configure environmental variables for a streamlined lab.
 
 .. code-block::
 
-   $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0"
+   $Env:MY_DEPLOY_KEY="XXXXXXXXXXXXXX"
    $Env:MY_HOSTNAME="StudentN-Windows"
 
 
