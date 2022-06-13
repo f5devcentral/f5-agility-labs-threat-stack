@@ -7,17 +7,25 @@ Spring4Shell Playbook
 First, Access the Linux Ubuntu 20.04 LTS Box via WebShell.
 
 .. image:: _static/UbuntuWebshell.png
+   :scale: 75%
 
-Next, navigate to the spring4shell directory by entering the following command:
+
+
+Next, navigate to the /spring4shell/ directory found in root by entering the following command:
 
 .. code-block::
    
-   cd spring4shell
+   cd /spring4shell/
+   
+   
    
 .. image:: _static/CDDirectoryCommand.png
+   :scale: 75%
+
 
 
 Next, to spin up the vulnerable Spring server, run the following command: 
+
 
 
 .. code-block::
