@@ -7,15 +7,24 @@ Self-Protecting Cloud
 
 Leveraging the Threat Stack API and simple code enables a host to proactively respond to activity automatically.  
 
-Confirm Python
-^^^^^^^^^^^^^^^
+Validate Python & AWS CLI
+^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block::
 
    python3 -V 
    Python 3.8.10 
 
+.. code-block::
 
-Confirm AWS CLI 
+   aws --version
+   aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
+
+Python Bot Setup 
+----------------
+The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
+
+Configure AWS CLI 
 ^^^^^^^^^^^^^^^
 .. image:: _static/_AWS_ConfigCheck.gif
 
@@ -29,14 +38,16 @@ Confirm AWS CLI
   secret_key     ****************ZtuZ shared-credentials-file 
   region                us-east-1      config-file    ~/.aws/config 
   
+      
+Let's configure our **AWS CLI** and **AWS Networking Infrastructure**. 
 
-.. note::
-
-   If not configured, configure the aws cli using the UDF Deployment Cloud Account. 
-   
 Configure AWS CLI
 ^^^^^^^^^^^^^^^^^^^
+By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, Access Key and AWS Secret Key.
+
+
 .. image:: _static/_AWS_AddConfig.gif
+
 
 Configure AWS Network Infrastructure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,14 +63,7 @@ Step 2: Grab the NetworkAclId
 .. code-block::
 
    aws ec2 describe-network-acls | grep NetworkAclId 
-   "NetworkAclId": "acl-01d98e20381b55f72", 
- 
- 
-Python Bot Setup 
-^^^^^^^^^^^^^^^^
-
-The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
-
+   "NetworkAclId": "acl-01d98e20381b55f72" 
 
 Step 1: Update Threat Stack Credentials File 
 
@@ -71,7 +75,7 @@ Step 1: Update Threat Stack Credentials File
    ts_user=USER 
    ts_key=KEY 
    
-Step 2: Make the directory
+Step 2: Make the credentials directory
 
 
 .. code-block::
@@ -85,6 +89,11 @@ Launch Python Bot
 
 
 Using the RuleID to detect the activity and the AWS NACL ID. 
+
+.. note::
+   Please use the following RuleID: 654db236-e367-11ec-8b40-8bde98a291cb
+   Rule can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**
+
 
 
 .. code-block::
