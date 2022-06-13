@@ -9,7 +9,7 @@ Threat Stack Cloud Security Platform® is a SaaS based application that supports
  **Challenge 1** – *Access the Threat Stack Cloud Security Platform®*
 
  1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
- 2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
+ 2. In the Email field, type **StudentN@dadismad.com** as the email address and click Next. 
  3. In the Password field, type **xxxxxxx** as the password and click Next. 
 
 .. note::
@@ -60,17 +60,18 @@ By selecting *Rules Page*, you can review all the included pre-built rules that 
 
 Rules Overview
 ^^^^^^^^^^^^^^^
-Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, select the **Down Arrow > Edit Rule**. 
+Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, select the **Down Arrow > Edit Rule**.
 
 .. image:: _static/_RulesPage_Drawer.gif
 
-
-Rule Editing
+ 
+Rule Quick Actions
 ^^^^^^^^^^^^^^^^^^^^^
-By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
+Additionally each rule (or group of rules) has available **quick actions** such as shifting the status of a rule. By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule. Also, the rules page has more quick actions available such as bulk actions, filtering, and sorting. 
 
 
 .. image:: _static/_Enable_Sample_Rule.gif
+
 
 .. attention:: 
  **Challenge 3** – *How to use Threat Stack Rules*
