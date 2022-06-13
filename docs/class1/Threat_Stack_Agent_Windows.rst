@@ -108,13 +108,14 @@ Open PowerShell and configure environmental variables for a streamlined lab.
 
 Download and install the Threat Stack Windows Agent. Then once install completes in a **new PowerShell** window > **tsagent status** 
 
-.. image:: _static/_Install_Windows_PowerShell_Complete.gif
-
 .. code-block::
 
    cd 'C:\Users\Administrator\Downloads\'
    wget https://pkg.threatstack.com/v2/Windows/Threat+Stack+Cloud+Security+Agent.latest.msi -OutFile Threat+Stack+Cloud+Security+Agent.latest.msi
    msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME
+
+
+.. image:: _static/_Install_Windows_PowerShell_Complete.gif
 
 
 .. warning::
@@ -126,6 +127,9 @@ Sysmon Install
 --------------
 
 System Monitor (Sysmon) is a Windows system service that monitors and logs system activity. Freely available at the link below.
+
+.. image:: _static/_Install_Windows_Sysmon.gif
+
 
 .. code-block::
 
@@ -142,6 +146,9 @@ Run the following commands from powershell/terminal:
    cd 'C:\Users\Administrator\Downloads\Sysmon\' 
    wget https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml -OutFile sysmonconfig-export.xml 
    sysmon -i sysmonconfig-export.xml 
+
+
+.. image:: _static/_Install_Windows_Sysmon_Complete.gif
 
  
 .. code-block::
