@@ -113,6 +113,12 @@ Download and install the Threat Stack Windows Agent.
    msiexec /qn /i "C:\Users\Administrator\Downloads\Threat+Stack+Cloud+Security+Agent.latest.msi" TSDEPLOYKEY="$Env:MY_DEPLOY_KEY" TSHOSTNAME=$Env:MY_HOSTNAME
 
 
+
+.. warning::
+   Sysmon installation is completed separately
+
+
+
 Sysmon Install
 --------------
 
