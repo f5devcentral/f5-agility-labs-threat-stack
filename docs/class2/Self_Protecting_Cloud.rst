@@ -5,7 +5,7 @@ Threat Stack Playbooks
 Self-Protecting Cloud
 ---------------------
 
-Leveraging the Threat Stack API and simple code enables a host to proactively respond to activity automatically.  
+The following lab will be a culmination of all knowledge gained across both Threat Stack Labs. Our goal as integrators is to leveraging the Threat Stack API and simple python code enabling a host to proactively respond to activity automatically.  
 
 Validate Python & AWS CLI
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -19,6 +19,7 @@ Validate Python & AWS CLI
 
    aws --version
    aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
+   
 
 Python Bot Setup 
 ----------------
