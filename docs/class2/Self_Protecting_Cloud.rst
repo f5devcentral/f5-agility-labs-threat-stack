@@ -57,11 +57,14 @@ Check AWS CLI
 
 Check AWS CLI Config 
 ^^^^^^^^^^^^^^^^^^^
-.. image:: _static/_AWS_ConfigCheck.gif
-
 .. code-block::
 
   aws configure list 
+  
+
+.. image:: _static/_AWS_ConfigCheck.gif
+
+
    
 AWS CLI Setup
 --------------
@@ -94,14 +97,15 @@ Step 2: Grab the NetworkAclId
    aws ec2 describe-network-acls | grep NetworkAclId 
    "NetworkAclId": "acl-XXXXXXXXXXX" 
    
-Python Bot Setup 
+Setup Python Bot 
 ----------------
-The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
+The following series of commands are intended to configure the python bot. The python bot can be found in the home directory of the Linux host. 
 
 Step 1: Update Threat Stack Credentials File 
 
 .. code-block::
 
+   cd python-bot
    sudo vim credentials 
    [default] 
    ts_org=ORG 
@@ -121,7 +125,8 @@ Launch Python Bot
 -----------------
 Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. 
 
-**RuleID: 654db236-e367-11ec-8b40-8bde98a291cb**
+**RuleID: 448889bf-eb81-11ec-b41e-1734e5d9feb0**
+**ACL ID: acl-06ead5a200e17b7d4**
 
 .. note::
    Rule can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**
