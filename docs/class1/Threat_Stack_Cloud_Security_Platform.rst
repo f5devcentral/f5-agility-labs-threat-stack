@@ -1,7 +1,7 @@
 Threat Stack Cloud Security Platform®
 *************************************
 
-Threat Stack Cloud Security Platform® is a SaaS based application that supports host intrusion detection for both on premise as well as cloud workloads. Supporting most major linux distributions, Windows Server, as well as a variety of container runtimes including Docker and ContainerD to provide unparalleled visibility into your workloads. New Updatehere.
+Threat Stack Cloud Security Platform® is a SaaS based application that supports host intrusion detection for both on premise as well as cloud workloads. Supporting most major linux distributions, Windows Server, as well as a variety of container runtimes including Docker and ContainerD to provide unparalleled visibility into your workloads. 
 
 .. image:: _static/_Login.gif
 
