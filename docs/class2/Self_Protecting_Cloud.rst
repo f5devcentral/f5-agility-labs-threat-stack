@@ -5,7 +5,16 @@ Threat Stack Playbooks
 Self-Protecting Cloud
 ---------------------
 
-The following lab will be a culmination of all knowledge gained across both Threat Stack Labs. Our goal as integrators is to leveraging the Threat Stack API and simple python code enabling a host to proactively respond to activity automatically.  
+The following lab will be a culmination of all knowledge gained across both Threat Stack Labs. Our goal as integrators is to leverage the Threat Stack API and simple python code to enable a host to proactively respond to activity automatically.
+
+In this section, validating the appropriate tools is important. 
+
+*Prerequisites*
+
+* Access to the Threat Stack Console
+* Access to a Cloud Provider Account (AWS, Azure, GCP)
+* Access to host via CLI supported Operating System Architecture(ARM or x86 architecture)
+* Access to a supported browser (Chrome, Edge, Safari, and Firefox)
 
 Validate Python & AWS CLI
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -19,8 +28,27 @@ Validate Python & AWS CLI
 
    aws --version
    aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
-   
 
+.. code-block::
+
+   tsagent status
+      UP Threat Stack Agent Daemon
+      UP Threat Stack Backend Connection
+      UP Threat Stack Heartbeat Service
+      UP Threat Stack Docker Monitoring
+      UP Threat Stack Containerd Monitoring
+      UP Threat Stack Network Tracer
+      UP Threat Stack DNS Tracer
+      UP Threat Stack Login Collector
+      UP Threat Stack Log Scan Service
+      UP Threat Stack Vulnerability Scanner
+      UP Threat Stack Audit Collection
+      UP Threat Stack File Integrity Monitor
+
+.. warning::
+   Using UDF, establish a terminal session with the host labelled, **Linux**
+   
+   
 Python Bot Setup 
 ----------------
 The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
