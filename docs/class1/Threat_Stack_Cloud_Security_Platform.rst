@@ -10,7 +10,7 @@ Threat Stack Cloud Security Platform® is a SaaS based application that supports
 
  1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
  2. In the Email field, type **StudentN@dadismad.com** as the email address and click Next. 
- 3. In the Password field, type **xxxxxxx** as the password and click Next. 
+ 3. In the Password field, type **1Amathre@t** as the password and click Next. 
 
 .. note::
  Access to the Threat Stack Cloud Security Platform® is managed by the Lab Members.
