@@ -16,18 +16,11 @@ In this section, validating the appropriate tools is important.
 * Access to host via CLI supported Operating System Architecture(ARM or x86 architecture)
 * Access to a supported browser (Chrome, Edge, Safari, and Firefox)
 
-Validate Python & AWS CLI
-^^^^^^^^^^^^^^^^^^^^^^
+.. note::
+   In UDF, establish a terminal session with the host labelled, **Linux**
 
-.. code-block::
-
-   python3 -V 
-   Python 3.8.10 
-
-.. code-block::
-
-   aws --version
-   aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
+Check Threat Stack Linux Agent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block::
 
@@ -45,35 +38,48 @@ Validate Python & AWS CLI
       UP Threat Stack Audit Collection
       UP Threat Stack File Integrity Monitor
 
-.. warning::
-   Using UDF, establish a terminal session with the host labelled, **Linux**
-   
-   
-Python Bot Setup 
-----------------
-The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
+
+Check Python 
+^^^^^^^^^^^^^
+
+.. code-block::
+
+   python3 -V 
+   Python 3.8.10 
 
 Check AWS CLI 
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
+
+.. code-block::
+
+   aws --version
+   aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
+
+Check AWS CLI Config 
+^^^^^^^^^^^^^^^^^^^
 .. image:: _static/_AWS_ConfigCheck.gif
 
 .. code-block::
 
   aws configure list 
-  
-      
-Now that we have confirmed no active AWS CLI Configuration. Let's configure our **AWS CLI** and **AWS Networking Infrastructure**. 
+   
+AWS CLI Setup
+--------------
+Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
 
-Configure AWS CLI
-^^^^^^^^^^^^^^^^^^
-By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, Access Key and AWS Secret Key.
 
+Setup AWS CLI
+^^^^^^^^^^^^^^
+By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, copy/paste both the **API Key** and **API Secret Key**.
+
+.. note::
+   In UDF, go to Deployments > Select **Threat Stack Labs** or name of deployment > Cloud Accounts. Here you will find the AWS keys such as; **API Key** and **API Secret Key**.
 
 .. image:: _static/_AWS_AddConfig.gif
 
 
-Configure AWS Network Infrastructure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Setup AWS Network 
+^^^^^^^^^^^^^^^^^^
 
 Step 1: Create the VPC
 
@@ -87,6 +93,10 @@ Step 2: Grab the NetworkAclId
 
    aws ec2 describe-network-acls | grep NetworkAclId 
    "NetworkAclId": "acl-XXXXXXXXXXX" 
+   
+Python Bot Setup 
+----------------
+The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
 
 Step 1: Update Threat Stack Credentials File 
 
