@@ -67,17 +67,18 @@ Check AWS CLI Config
 
 Threat Stack Setup
 ------------------
-Before jumping into the technical configuration on this lab, let us first create our detection rule within the Threat Stack Cloud Security Platform. For this Lab, our rule is intended to highlight network process activity. 
-
-.. note::
-   Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**
+Before jumping into the technical configuration on this lab, let us first define our detection rule within the Threat Stack Cloud Security Platform. For this Lab, our rule is intended to highlight network process activity. 
 
 
 Setup Threat Stack Rule
 ^^^^^^^^^^^^^^^^^^^^^^^
+Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**. Feel free to create a new rule or clone existing.
+
 .. image:: _static/_RuleCreation_Example.gif
 
 
+Setup Threat Stack Rule
+^^^^^^^^^^^^^^^^^^^^^^^
 Update the rule using the following criteria: 
 
 * **Rule Name**
@@ -99,6 +100,12 @@ Update the rule using the following criteria:
 * **Rule Filter**
 
  * event_type = "audit" and syscall = "connect" and (connection.dst_addr != "127.0.0.0/8" and connection.dst_addr != "::1/128" and connection.dst_addr != "::" and connection.dst_addr != "0.0.0.0" and connection.dst_addr != "169.254.0.0/16")
+
+Enable Threat Stack Rule
+^^^^^^^^^^^^^^^^^^^^^^^^
+Using **Rule Quick** actions or by **editing the rule**, update the status of the rule to enable it.
+
+.. image:: _static/_RulesPage_OnOff.gif
 
 
 AWS CLI Setup
