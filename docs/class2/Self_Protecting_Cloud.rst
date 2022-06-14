@@ -64,8 +64,38 @@ Check AWS CLI Config
 
 .. image:: _static/_AWS_ConfigCheck.gif
 
+Threat Stack Setup
+------------------
+Before performing technical configuration, let us create our detection within Threat Stack. For this example our rule is meant to highlight network process activity.
 
-   
+
+Setup Threat Stack Rule
+^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: _static/_RuleCreation_Example.gif
+
+
+
+* **Rule Name**
+
+ * Self Protect: **StudentN**: Network: Outbound Connection (Connects) to WAN
+
+* **Alert Title**
+
+ * Self Protect: **StudentN**: Network: Outbound Connection (Connects) to WAN: {{exe}} ran by user {{user}} connected to {{dst_ip}}
+
+* **Alert Description**
+
+ * This alerts when a program connects to an external server's service.   An example is a wget/curl to an external HTTP server. This could be used for data exfiltration.  Depending on your environment this could be VERY noisy.   We recommend adding to the rule filter to focus scope of the rule.
+
+* **Aggregate Fields**
+
+ * user, exe, dst_ip 
+
+* **Rule Filter**
+
+ * event_type = "audit" and syscall = "connect" and (connection.dst_addr != "127.0.0.0/8" and connection.dst_addr != "::1/128" and connection.dst_addr != "::" and connection.dst_addr != "0.0.0.0" and connection.dst_addr != "169.254.0.0/16")
+
+
 AWS CLI Setup
 --------------
 Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
