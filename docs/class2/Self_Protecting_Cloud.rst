@@ -57,6 +57,7 @@ Check AWS CLI
 
 Check AWS CLI Config 
 ^^^^^^^^^^^^^^^^^^^
+
 .. code-block::
 
   aws configure list 
@@ -66,7 +67,10 @@ Check AWS CLI Config
 
 Threat Stack Setup
 ------------------
-Before performing technical configuration, let us create our detection within Threat Stack. For this example our rule is meant to highlight network process activity.
+Before jumping into the technical configuration on this lab, let us first create our detection rule within the Threat Stack Cloud Security Platform. For this Lab, our rule is intended to highlight network process activity. 
+
+.. note::
+   Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**
 
 
 Setup Threat Stack Rule
@@ -74,6 +78,7 @@ Setup Threat Stack Rule
 .. image:: _static/_RuleCreation_Example.gif
 
 
+Update the rule using the following criteria: 
 
 * **Rule Name**
 
