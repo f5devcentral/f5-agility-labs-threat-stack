@@ -2,7 +2,7 @@ Threat Stack Playbooks
 ======================
 
 Self-Protecting Cloud - Create Environment
-==========================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Threat Stack Setup
 ------------------
