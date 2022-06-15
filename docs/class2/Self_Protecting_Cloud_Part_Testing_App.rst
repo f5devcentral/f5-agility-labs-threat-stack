@@ -54,20 +54,25 @@ The python bot will now watch for the RuleID to be triggered. *Leave terminal co
 
 Results
 ^^^^^^^
-
-**New Terminal**
-
-In a new terminal we will sample activity from the python bot observing the rule. Once the rule triggers, the python bot grabs the destination/source IPs from the alert (and any contributing event) to then add them to the AWS VPC ACL using the AWS CLI. Before continuing lets review the AWS environment creatred by viewing current ACLs. 
+Before continuing lets review the AWS environment creatred by viewing current ACLs. 
 
 **Current NACLs**
 
 .. code-block::
    aws ec2 describe-network-acls --network-acl-ids <ACL ID>
+   
+.. image:: _static/_AWS_CLI_ViewACLs.gif
 
-Execute Command 
+**New Terminal**
+
+In a new terminal we will sample activity from the python bot observing the rule. Once the rule triggers, the python bot grabs the destination/source IPs from the alert (and any contributing event) to then add them to the AWS VPC ACL using the AWS CLI. 
+
+.. image:: _static/_FinalAttack_NewTerminal.gif
+
+Execute Command to trigger the **RuleID**
 
 .. code-block::
    
    curl dadismad.com
 
-<Image Gif>
+.. image:: _static/_FinalAttack.gif
