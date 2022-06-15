@@ -5,7 +5,7 @@ Self-Protecting Cloud - Part 3
 ------------------------------
    
 Setup Python Bot 
-----------------
+^^^^^^^^^^^^^^^^
 The following series of commands are intended to configure the python bot to communicate with the Threat Stack API. The python bot can be found in the home directory of the Linux host. 
 
 Step 1: Update Threat Stack Credentials File 
@@ -29,7 +29,7 @@ Step 2: Copy and move credentials into created directory
    
 
 Launch Python Bot
------------------
+^^^^^^^^^^^^^^^^
 Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. Please note the **RuleID** below is a **VALID** from Rule can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**. 
 
 **RuleID: 448889bf-eb81-11ec-b41e-1734e5d9feb0**
