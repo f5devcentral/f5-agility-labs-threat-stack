@@ -1,7 +1,8 @@
-Threat Stack Playbooks Part 3
-=============================
+Threat Stack Playbooks
+=======================
 
-
+Self-Protecting Cloud - Testing Application
+===========================================+
 AWS CLI Setup
 --------------
 Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
