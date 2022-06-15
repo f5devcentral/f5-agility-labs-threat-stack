@@ -64,3 +64,6 @@ Check AWS CLI Config
 
 .. image:: _static/_AWS_ConfigCheck.gif
 
+
+.. warning::
+   In UDF, if the **Linux** system doesn't have the **Threat Stack Linux Agent**, **Python**, or **AWS CLI** inform a Lab member before continuing.
