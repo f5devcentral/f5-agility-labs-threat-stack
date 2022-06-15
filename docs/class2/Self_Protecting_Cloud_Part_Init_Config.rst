@@ -1,8 +1,8 @@
-Threat Stack Playbooks
-=======================
-
-Self-Protecting Cloud - Initial Configuration
+Threat Stack Playbooks - Self-Protecting Cloud
 ==============================================
+
+Initial Configuration
+---------------------
 
 The following lab will be a culmination of all knowledge gained across both Threat Stack Labs. Our goal as integrators is to leverage the Threat Stack API and simple python code to enable a host to proactively respond to activity automatically.
 
