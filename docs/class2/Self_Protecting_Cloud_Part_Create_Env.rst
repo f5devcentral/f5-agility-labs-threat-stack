@@ -83,5 +83,7 @@ Using **Rule Quick** actions or by **editing the rule**, update the status of th
 
 **Get Rule ID**
 
+.. image:: _static/_Rules_RuleID.gif
+
 .. note::
    Save the **RuleID** for later use.
