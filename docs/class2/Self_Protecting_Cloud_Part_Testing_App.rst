@@ -1,8 +1,5 @@
-Threat Stack Playbooks -Self-Protecting Cloud
-=============================================
-
-Run Application
--------------------
+Launch Python Bot
+------------------
    
 Setup Python Bot 
 ----------------
