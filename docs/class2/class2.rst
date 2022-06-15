@@ -15,6 +15,9 @@ Explore Threat Stack's Cloud Security Platform (CSP) through in an in-depth look
 .. toctree::
    ThreatML
    Threat_Stack_API
-   Self_Protecting_Cloud 
+   Self_Protecting_Cloud_Part_1
+   Self_Protecting_Cloud_Part_2
+   Self_Protecting_Cloud_Part_3
+   
 
 Click next to begin your lab
