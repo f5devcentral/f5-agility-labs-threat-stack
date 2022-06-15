@@ -1,11 +1,12 @@
-Threat Stack Playbooks
-======================
+Threat Stack Playbooks - Self-Protecting Cloud
+==============================================
 
-Self-Protecting Cloud - Create Environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create Environment
+------------------
 
 Threat Stack Setup
-------------------
+^^^^^^^^^^^^^^^^^^
+
 Before jumping into the technical configuration on this lab, let us first define our detection rule within the Threat Stack Cloud Security Platform. For this Lab, our rule is intended to highlight network process activity. 
 
 
