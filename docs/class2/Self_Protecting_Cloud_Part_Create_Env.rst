@@ -1,8 +1,14 @@
+Threat Stack Playbooks
+=======================
+
+Self-Protecting Cloud - Part 2
+------------------------------
+
 Create Environment
-------------------
+^^^^^^^^^^^^^^^^^^
 
 AWS CLI Setup
---------------
+^^^^^^^^^^^^^^^
 Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
 
 
@@ -41,7 +47,7 @@ Before jumping into the technical configuration on this lab, let us first define
 
 
 Setup Threat Stack Rule
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 The suggested Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**. Feel free to create a new rule or clone existing.
 
 .. image:: _static/_RuleCreation_Example.gif
@@ -75,6 +81,7 @@ Using **Rule Quick** actions or by **editing the rule**, update the status of th
 
 .. image:: _static/_RulesPage_OnOff.gif
 
+**Get Rule ID**
 
 .. note::
    Save the **RuleID** for later use.
