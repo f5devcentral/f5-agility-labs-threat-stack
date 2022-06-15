@@ -21,8 +21,8 @@ By typing **aws configure** as illustrated below, you navigate to **Cloud Accoun
 
 .. image:: _static/_AWS_AddConfig.gif
 
-Setup AWS Network 
-^^^^^^^^^^^^^^^^^^
+Setup AWS VPC Network 
+^^^^^^^^^^^^^^^^^^^^^^
 
 Step 1: Create the VPC
 
@@ -77,16 +77,16 @@ Update the rule using the following criteria:
 
 
 
-Enable Threat Stack Rule
-^^^^^^^^^^^^^^^^^^^^^^^^
+Enable Rule
+^^^^^^^^^^^^
 Using **Rule Quick** actions or by **editing the rule**, update the status of the rule to enable it.
 
 .. image:: _static/_RulesPage_OnOff.gif
 
 
 
-Get Rule ID
-^^^^^^^^^^^^
+Retrieve Rule ID
+^^^^^^^^^^^^^^^^^
 .. image:: _static/_Rules_RuleID.gif
 
 .. note::
