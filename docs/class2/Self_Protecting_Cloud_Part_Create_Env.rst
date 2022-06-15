@@ -7,31 +7,34 @@ Self-Protecting Cloud - Part 2
 Create Environment
 ^^^^^^^^^^^^^^^^^^
 
-AWS CLI Setup
-^^^^^^^^^^^^^^^
+AWS Command Line Interface
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
 
 
-Setup AWS CLI
+AWS CLI Config
 ^^^^^^^^^^^^^^
 By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, copy/paste both the **API Key** and **API Secret Key**.
 
+
 .. note::
    In UDF, go to Deployments > Select **Threat Stack Labs** or name of deployment > Cloud Accounts. Here you will find the AWS keys such as; **API Key** and **API Secret Key**.
+   
 
 .. image:: _static/_AWS_AddConfig.gif
 
-Setup AWS VPC Network 
-^^^^^^^^^^^^^^^^^^^^^^
 
-Step 1: Create the VPC
+AWS CLI Config VPC Network 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create the Virtual Private Cloud (VPC) in AWS Cloud Account. 
 
 .. code-block::
 
    aws ec2 create-vpc --cidr-block 10.0.0.0/16 
+   
 
-Step 2: Grab the NetworkAclId
-
+Retrieve RuleID
+^^^^^^^^^^^^^^^^
 .. code-block::
 
    aws ec2 describe-network-acls | grep NetworkAclId 
