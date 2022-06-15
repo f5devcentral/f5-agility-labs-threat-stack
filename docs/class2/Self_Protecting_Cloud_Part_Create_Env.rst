@@ -6,14 +6,11 @@ Self-Protecting Cloud - Part 2
 
 Create Environment
 ^^^^^^^^^^^^^^^^^^
-
-AWS Command Line Interface
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-Now that we have confirmed no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**. 
+Now that we have confirmed Python, Threat Stack, and no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**, 
 
 
-AWS CLI Config
-^^^^^^^^^^^^^^
+**AWS CLI Configuration**
+
 By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, copy/paste both the **API Key** and **API Secret Key**.
 
 
@@ -24,8 +21,8 @@ By typing **aws configure** as illustrated below, you navigate to **Cloud Accoun
 .. image:: _static/_AWS_AddConfig.gif
 
 
-AWS CLI Config VPC Network 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**AWS CLI Config VPC Network** 
+
 Create the Virtual Private Cloud (VPC) in AWS Cloud Account. 
 
 .. code-block::
@@ -33,8 +30,8 @@ Create the Virtual Private Cloud (VPC) in AWS Cloud Account.
    aws ec2 create-vpc --cidr-block 10.0.0.0/16 
    
 
-Retrieve RuleID
-^^^^^^^^^^^^^^^^
+**Retrieve RuleID**
+
 .. code-block::
 
    aws ec2 describe-network-acls | grep NetworkAclId 
@@ -49,8 +46,8 @@ Threat Stack Setup
 Before jumping into the technical configuration on this lab, let us first define our detection rule within the Threat Stack Cloud Security Platform. For this Lab, our rule is intended to highlight network process activity. 
 
 
-Setup Threat Stack Rule
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Threat Stack - Create Rule**
+
 The suggested Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**. Feel free to create a new rule or clone existing.
 
 .. image:: _static/_RuleCreation_Example.gif
@@ -79,17 +76,15 @@ Update the rule using the following criteria:
  * event_type = "audit" and syscall = "connect" and (connection.dst_addr != "127.0.0.0/8" and connection.dst_addr != "::1/128" and connection.dst_addr != "::" and connection.dst_addr != "0.0.0.0" and connection.dst_addr != "169.254.0.0/16")
 
 
+**Threat Stack - Enable Rule**
 
-Enable Rule
-^^^^^^^^^^^^
 Using **Rule Quick** actions or by **editing the rule**, update the status of the rule to enable it.
 
 .. image:: _static/_RulesPage_OnOff.gif
 
 
+**Retrieve Rule ID**
 
-Retrieve Rule ID
-^^^^^^^^^^^^^^^^^
 .. image:: _static/_Rules_RuleID.gif
 
 .. note::
