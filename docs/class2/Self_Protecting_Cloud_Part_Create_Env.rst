@@ -4,7 +4,7 @@ Threat Stack Playbooks - Part 2
 Self-Protecting Cloud - Part 2
 ------------------------------
 
-Create Environment
+Create AWS Environment
 ^^^^^^^^^^^^^^^^^^
 Now that we have confirmed Python, Threat Stack, and no active AWS CLI accounts. Let's add our **AWS CLI Account** and setup the required **AWS Network**, 
 
