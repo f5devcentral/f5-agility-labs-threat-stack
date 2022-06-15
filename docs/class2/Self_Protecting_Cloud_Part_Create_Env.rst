@@ -75,14 +75,18 @@ Update the rule using the following criteria:
 
  * event_type = "audit" and syscall = "connect" and (connection.dst_addr != "127.0.0.0/8" and connection.dst_addr != "::1/128" and connection.dst_addr != "::" and connection.dst_addr != "0.0.0.0" and connection.dst_addr != "169.254.0.0/16")
 
+
+
 Enable Threat Stack Rule
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Using **Rule Quick** actions or by **editing the rule**, update the status of the rule to enable it.
 
 .. image:: _static/_RulesPage_OnOff.gif
 
-**Get Rule ID**
 
+
+Get Rule ID
+^^^^^^^^^^^^
 .. image:: _static/_Rules_RuleID.gif
 
 .. note::
