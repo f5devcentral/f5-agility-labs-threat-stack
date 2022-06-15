@@ -1,9 +1,12 @@
-Launch Python Bot
-------------------
+Threat Stack Playbooks - Part 3
+===============================
+
+Self-Protecting Cloud - Part 3
+------------------------------
    
 Setup Python Bot 
 ----------------
-The following series of commands are intended to configure the python bot. The python bot can be found in the home directory of the Linux host. 
+The following series of commands are intended to configure the python bot to communicate with the Threat Stack API. The python bot can be found in the home directory of the Linux host. 
 
 Step 1: Update Threat Stack Credentials File 
 
@@ -27,9 +30,10 @@ Step 2: Copy and move credentials into created directory
 
 Launch Python Bot
 -----------------
-Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. 
+Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. Please note the **RuleID** below is a **VALID** from the **F5 - Aglility Labs** Threat Stack organization. 
 
 **RuleID: 448889bf-eb81-11ec-b41e-1734e5d9feb0**
+
 **ACL ID: acl-06ead5a200e17b7d4**
 
 .. note::
@@ -38,6 +42,10 @@ Use the **RuleID** provided below to detect network outbound connection to WAN a
 .. code-block::
 
    python3 .threatstack/integration.py --watchrule **RuleID** --aws_acl_id **ACLID** 
+
+The python bot will now watch for the RuleID to be triggered. 
+
+   Alert poll returned destination set() source [] to block at the firewall 
 
 
 Execute Command 
@@ -49,8 +57,7 @@ Execute Command
 
 Terminal Results 
 ^^^^^^^^^^^^^^^^
-The following is a sample of the resulting terminal activity from the command which executes the malware. 
-
+The following is a sample of the resulting terminal activity from the python bot observing the rule. Once the rule triggers, the python bot grabs the destination/source IPs from the alert (and any contributing event) to then add them to the AWS VPC ACL using the AWS CLI.
 
 .. code-block::
 
