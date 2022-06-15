@@ -10,14 +10,12 @@ Before jumping into the technical configuration on this lab, let us first define
 
 
 Setup Threat Stack Rule
-^^^^^^^^^^^^^^^^^^^^^^^
-Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**. Feel free to create a new rule or clone existing.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The suggested Rule is precreated within Threat Stack's **F5 - Agility Labs** Organization, named **Self Protect: Network: Outbound Connection (Connects) to WAN**. Feel free to create a new rule or clone existing.
 
 .. image:: _static/_RuleCreation_Example.gif
 
 
-Setup Threat Stack Rule
-^^^^^^^^^^^^^^^^^^^^^^^
 Update the rule using the following criteria: 
 
 * **Rule Name**
