@@ -8,27 +8,26 @@ Setup Python Bot
 ^^^^^^^^^^^^^^^^
 The following series of commands are intended to configure the python bot to communicate with the Threat Stack API. The python bot can be found in the home directory of the Linux host. 
 
-Step 1: Update Threat Stack Credentials File 
+Step 1: Download & Unzip Python-Bot
+
+.. code-block::
+   
+   wget --no-check-certificate --content-disposition https://github.com/f5devcentral/f5-agility-labs-threat-stack/raw/master/docs/class2/python-bot.zip
+   unzip python-bot.zip
+
+Step 2: Update Threat Stack Credentials File 
 
 .. code-block::
 
    cd /home/ubuntu/python-bot
    sudo vim credentials 
 
-
 .. code-block::
+
    [default] 
    ts_org=TS_ORGANIZATION_ID 
    ts_user=TS_USER_ID 
    ts_key=TS_API_KEY 
-   
-Step 2: Copy and move credentials into created directory
-
-
-.. code-block::
-
-   mkdir ../.threatstack 
-   cp credentials ../.threatstack 
    
 
 Launch Python Bot
