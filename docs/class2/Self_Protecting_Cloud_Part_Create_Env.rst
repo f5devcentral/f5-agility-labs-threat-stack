@@ -51,6 +51,19 @@ Create the Virtual Private Cloud (VPC) in AWS Cloud Account.
    
 .. note::
    Save the **NetworkAclId** for later use.
+   
+**Current NACLs**
+
+Before continuing lets review the AWS environment default ACLs.
+
+
+.. code-block::
+
+   aws ec2 describe-network-acls --network-acl-ids **ACLID**
+
+
+.. image:: _static/_AWS_CLI_ViewACLs.gif
+
 
 Threat Stack Setup
 ^^^^^^^^^^^^^^^^^^
