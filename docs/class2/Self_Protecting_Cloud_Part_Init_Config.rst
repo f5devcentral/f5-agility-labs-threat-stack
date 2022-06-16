@@ -26,6 +26,9 @@ Check Threat Stack Linux Agent
 .. code-block::
 
    tsagent status
+
+
+.. code-block::
       UP Threat Stack Agent Daemon
       UP Threat Stack Backend Connection
       UP Threat Stack Heartbeat Service
@@ -45,8 +48,14 @@ Check Python
 
 .. code-block::
 
-   python3 -V 
-   Python 3.8.10 
+   python3 -V
+
+
+.. code-block::
+
+   Python 3.8.10
+
+
 
 Check AWS CLI 
 ^^^^^^^^^^^^^
@@ -54,7 +63,13 @@ Check AWS CLI
 .. code-block::
 
    aws --version
-   aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19 
+
+
+.. code-block::
+
+   aws-cli/1.18.69 Python/3.8.10 Linux/5.13.0-1025-aws botocore/1.16.19
+
+
 
 Check AWS CLI Config 
 ^^^^^^^^^^^^^^^^^^^
