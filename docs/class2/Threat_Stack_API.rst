@@ -106,7 +106,10 @@ You might have to install pip3 if the instance (or local machine) doesn’t have
    
 
 4. Edit the **threatstack.cfg.sample** to update [USER_INFO] and [DEFAULT] with your 
-   **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. Lastly, rename **threatstack.cfg.sample** to **threatstack.cfg** in the same directory
+   **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. 
+
+
+5. Rename **threatstack.cfg.sample** to **threatstack.cfg** in the same directory
 
 
 .. code-block:: 
@@ -115,7 +118,7 @@ You might have to install pip3 if the instance (or local machine) doesn’t have
    cp threatstack.cfg.sample threatstack.cfg 
 
 
-5. Run it!
+6. Run it!
 
 .. code-block:: 
 
