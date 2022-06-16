@@ -90,7 +90,11 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
 .. code-block:: 
 
    sudo pip3 install -r requirements.txt 
-   Note: You might have to install pip3 if the instance (or local machine) doesn’t have it. 
+   
+   
+You might have to install pip3 if the instance (or local machine) doesn’t have it. 
+
+.. note::
    sudo apt install python3-pip 
 
 
