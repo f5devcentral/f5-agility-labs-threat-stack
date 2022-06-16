@@ -29,6 +29,7 @@ Check Threat Stack Linux Agent
 
 
 .. code-block::
+
    UP Threat Stack Agent Daemon
    UP Threat Stack Backend Connection
    UP Threat Stack Heartbeat Service
