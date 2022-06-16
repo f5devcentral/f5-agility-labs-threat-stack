@@ -12,7 +12,7 @@ Step 1: Download & Unzip Python-Bot
 
 .. code-block::
    
-   wget --no-check-certificate --content-disposition https://github.com/f5devcentral/f5-agility-labs-threat-stack/raw/master/docs/class2/python-bot.zip
+   wget https://github.com/f5devcentral/f5-agility-labs-threat-stack/raw/master/docs/class2/python-bot.zip
    unzip python-bot.zip
 
 Step 2: Update Threat Stack Credentials File 
