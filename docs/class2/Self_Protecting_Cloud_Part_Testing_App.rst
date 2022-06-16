@@ -12,12 +12,15 @@ Step 1: Update Threat Stack Credentials File
 
 .. code-block::
 
-   cd python-bot
+   cd /home/ubuntu/python-bot
    sudo vim credentials 
+
+
+.. code-block::
    [default] 
-   ts_org=ORG 
-   ts_user=USER 
-   ts_key=KEY 
+   ts_org=TS_ORGANIZATION_ID 
+   ts_user=TS_USER_ID 
+   ts_key=TS_API_KEY 
    
 Step 2: Copy and move credentials into created directory
 
@@ -30,16 +33,18 @@ Step 2: Copy and move credentials into created directory
 
 Launch Python Bot
 ^^^^^^^^^^^^^^^^
-Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. Please note the **RuleID** below is a **VALID** from Rule can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**. 
+Use the **RuleID** provided below to detect network outbound connection to WAN and then auto add the CIDR block to the **AWS NACL ID**. The AWS VPC will block the added CIDR Block in near-realtime. 
 
-**RuleID: 448889bf-eb81-11ec-b41e-1734e5d9feb0**
+* **RuleID: 448889bf-eb81-11ec-b41e-1734e5d9feb0**
+* **ACL ID: acl-06ead5a200e17b7d4**
 
-**ACL ID: acl-06ead5a200e17b7d4**
+Be aware that the **RuleID** below is a **VALID** and can be found in **F5 - Agility Labs** > **Rules** > **Base Rule Set** > **Network: Outbound Connection (Connects) to WAN**. 
+
 
 .. warning::
    In UDF, **Linux** instance python bot may require **pip3 install boto3** or **pip3 install --upgrade awscli**
    
-   
+
 .. code-block::
 
    python3 .threatstack/integration.py --watchrule **RuleID** --aws_acl_id **ACLID** 
@@ -54,14 +59,6 @@ The python bot will now watch for the RuleID to be triggered. *Leave terminal co
 
 Results
 ^^^^^^^
-Before continuing lets review the AWS environment creatred by viewing current ACLs. 
-
-**Current NACLs**
-
-.. code-block::
-   aws ec2 describe-network-acls --network-acl-ids <ACL ID>
-   
-.. image:: _static/_AWS_CLI_ViewACLs.gif
 
 **New Terminal**
 
