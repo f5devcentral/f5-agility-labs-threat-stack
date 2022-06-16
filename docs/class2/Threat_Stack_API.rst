@@ -108,13 +108,14 @@ You might have to install pip3 if the instance (or local machine) doesn’t have
 4. Edit the **threatstack.cfg.sample** to update [USER_INFO] and [DEFAULT] with your 
    **TS_USER_ID**, **TS_API_KEY**, and **TS_ORG_ID**. 
 
-
-5. Rename **threatstack.cfg.sample** to **threatstack.cfg** in the same directory
-
-
 .. code-block:: 
 
    vim threatstack.cfg.sample  
+   
+5. Rename **threatstack.cfg.sample** to **threatstack.cfg** in the same directory
+   
+.. code-block:: 
+
    cp threatstack.cfg.sample threatstack.cfg 
 
 
@@ -122,7 +123,11 @@ You might have to install pip3 if the instance (or local machine) doesn’t have
 
 .. code-block:: 
 
-   python3 get_agents.py 
+   python3 get_agents.py
+   
+**Results**
+.. code-block:: 
+
    Returned 30 agents. 
    30 agents written to file. 
    
