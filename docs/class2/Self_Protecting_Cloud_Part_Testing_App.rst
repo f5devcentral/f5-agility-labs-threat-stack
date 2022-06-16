@@ -47,7 +47,7 @@ Be aware that the **RuleID** below is a **VALID** and can be found in **F5 - Agi
 
 .. code-block::
 
-   python3 .threatstack/integration.py --watchrule **RuleID** --aws_acl_id **ACLID** 
+   python3 integration.py --watchrule **RuleID** --aws_acl_id **ACLID** 
 
 The python bot will now watch for the RuleID to be triggered. *Leave terminal connected, and **start a new terminal session**.
 
