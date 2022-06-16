@@ -13,6 +13,13 @@ Now that we have confirmed Python, Threat Stack, and no active AWS CLI accounts.
 
 By typing **aws configure** as illustrated below, you navigate to **Cloud Accounts** in UDF. Here you will find the AWS credentials required, copy/paste both the **API Key** and **API Secret Key**.
 
+.. warning::
+   In UDF, **Linux** instance aws cli may require **pip3 install boto3** or **pip3 install --upgrade awscli**
+
+
+.. code-block::
+
+  aws configure
 
 .. note::
    In UDF, go to Deployments > Select **Threat Stack Labs** or name of deployment > Cloud Accounts. Here you will find the AWS keys such as; **API Key** and **API Secret Key**.
@@ -30,12 +37,17 @@ Create the Virtual Private Cloud (VPC) in AWS Cloud Account.
    aws ec2 create-vpc --cidr-block 10.0.0.0/16 
    
 
-**Retrieve RuleID**
+**Retrieve NetworkAclId**
 
 .. code-block::
 
    aws ec2 describe-network-acls | grep NetworkAclId 
+   
+   
+.. code-block::
+
    "NetworkAclId": "acl-XXXXXXXXXXX" 
+   
    
 .. note::
    Save the **NetworkAclId** for later use.
