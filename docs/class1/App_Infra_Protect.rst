@@ -1,8 +1,6 @@
 Application Infrastructure Protection (AIP)
 ************************************
 
-**Updating to Reflect XC Updating**
-
 .. image:: _static/F5XC_Login.gif
 
 .. attention:: 
@@ -10,7 +8,7 @@ Application Infrastructure Protection (AIP)
 
  1. Navigate to **your org** Application Infrastructure Protection 
  2. Log into F5XC Tenant, utilizing your assigned credentials and click Sign In. 
- 3. Either Search for **AIP** or scroll down to the Application Infrastructure Protection (AIP). 
+ 3. Either Search for **AIP** or scroll down to the **Application Infrastructure Protection (AIP)**. 
 
 .. note::
  Access to the Application Infrastructure Protection (AIP) is managed by the Lab Members or the tenant owners.
