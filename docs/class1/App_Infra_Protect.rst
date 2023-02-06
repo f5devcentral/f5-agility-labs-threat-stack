@@ -3,17 +3,17 @@ Application Infrastructure Protection (AIP)
 
 **Updating to Reflect XC Updating**
 
-.. image:: _static/_Login.gif
+.. image:: _static/F5XC_Login.gif
 
 .. attention:: 
  **Challenge 1** – *Access the Application Infrastructure Protection*
 
- 1. Navigate to the Application Infrastructure Protection: https://app.threatstack.com/login 
- 2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
- 3. In the Password field, type **xxxxxxx** as the password and click Next. 
+ 1. Navigate to **your org** Application Infrastructure Protection 
+ 2. Log into F5XC Tenant, utilizing your assigned credentials and click Sign In. 
+ 3. Either Search for **AIP** or scroll down to the Application Infrastructure Protection (AIP). 
 
 .. note::
- Access to the Application Infrastructure Protection is managed by the Lab Members.
+ Access to the Application Infrastructure Protection (AIP) is managed by the Lab Members or the tenant owners.
 
 Monitoring
 -----------
