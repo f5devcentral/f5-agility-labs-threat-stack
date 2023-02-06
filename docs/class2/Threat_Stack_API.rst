@@ -30,7 +30,7 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 
 *Challenge 2 – Review Webhook*
 
-1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
+1. Navigate to the Application Infrastructure Protection: https://app.threatstack.com/login 
 2. Select Settings > Integrations in the navigation bar 
 3. Scroll to the Webhook API section 
 4. Click this link to review the events sent to Request Bin: https://requestbin.com/r/enga46ei5gint/ 

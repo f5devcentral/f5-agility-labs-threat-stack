@@ -1,17 +1,19 @@
-Threat Stack Cloud Security Platform
+Application Infrastructure Protection (AIP)
 ************************************
+
+**Updating to Reflect XC Updating**
 
 .. image:: _static/_Login.gif
 
 .. attention:: 
- **Challenge 1** – *Access the Threat Stack Cloud Security Platform*
+ **Challenge 1** – *Access the Application Infrastructure Protection*
 
- 1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
+ 1. Navigate to the Application Infrastructure Protection: https://app.threatstack.com/login 
  2. In the Email field, type **studetn@dadismad.com** as the email address and click Next. 
  3. In the Password field, type **xxxxxxx** as the password and click Next. 
 
 .. note::
- Access to the Threat Stack Cloud Security Platform is managed by the Lab Members.
+ Access to the Application Infrastructure Protection is managed by the Lab Members.
 
 Monitoring
 -----------
@@ -24,7 +26,7 @@ By selecting **Servers Page**, you can filter or change information shown about 
 
 Vulnerabilities
 ^^^^^^^^^^^^^^^
-Threat Stack Agent retrieves a list of installed packages on the host each day and matches against all known Common Vulnerabilities & Exposures (CVEs) captured in the National Vulnerability Database (NVD). It then compares them against the published security notice and triage data from the specific Linux distribution. 
+Application Infrastructure Protection (AIP) Agent retrieves a list of installed packages on the host each day and matches against all known Common Vulnerabilities & Exposures (CVEs) captured in the National Vulnerability Database (NVD). It then compares them against the published security notice and triage data from the specific Linux distribution. 
 
 .. note::
  For a feature walthrough of Vulnerability Assessments navigate here: https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
@@ -33,11 +35,11 @@ Threat Stack Agent retrieves a list of installed packages on the host each day a
 
 AWS EC2 Inventory 
 ^^^^^^^^^^^^^^^
-With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Threat Stack Cloud Security PlatformⓇ (CSP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
+With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Application Infrastructure ProtectionⓇ (AIP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
 .. image:: _static/_ServerPages_AllEC2.gif
 
 .. attention:: 
- **Challenge 2** - *How To Review A Threat Stack Environment*
+ **Challenge 2** - *How To Review A Application Infrastructure Protection (AIP) Environment*
 
  Using the information acquired above, start developing context on the infrastructure by reviewing the **Servers** page.
 
@@ -69,7 +71,7 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
 .. image:: _static/_RulesPage_OnOff.gif
 
 .. attention:: 
- **Challenge 3** – *How to use Threat Stack Rules*
+ **Challenge 3** – *How to use Application Infrastructure Protection (AIP) Rules*
 
 * Using the information acquired above, start enabling rules based on goals, objectives or for general visibility. 
 
@@ -110,7 +112,7 @@ By selecting Alerts, you’ll see an organized list sorted by severity, number o
 
 * Tabs as focus areas: We narrowed in on the well-known concept of browser tabs as focus areas, with in-built default tabs and the ability for customers to create and save their own tabs. Each tab can be customized to match the originating rulesets and/or originating servers (EC2 tags). 
 
-* Live alert loading: The Alerts page displays alerts as they come in. It does not delay the loading of alerts coming into the Threat Stack Cloud Security PlatformⓇ (CSP). 
+* Live alert loading: The Alerts page displays alerts as they come in. It does not delay the loading of alerts coming into the Application Infrastructure ProtectionⓇ (CSP). 
 
 * Search on alert titles: All tabs have a "Filter by Title" search field. Results appear as the users type in the words in the search bar. 
  
@@ -140,7 +142,7 @@ Alerts are behavior anomalies elevated from the stream of raw telemetry by rule 
 Alert Lifecycle
 ^^^^^^^^^^^^^^^^
 
-The following rule shows a Severity 1 event, where the Alert is reporting that Ptrace activity has been noted. As a Severity 1, the Threat Stack Cloud Security PlatformⓇ (CSP) uses machine learning (ML) to highlight occurrences of the event within 30 days. This is called Alert Context.
+The following rule shows a Severity 1 event, where the Alert is reporting that Ptrace activity has been noted. As a Severity 1, the Application Infrastructure ProtectionⓇ (CSP) uses machine learning (ML) to highlight occurrences of the event within 30 days. This is called Alert Context.
 
 For more information as to why watch a Ptrace syscall, here is the MITRE ATT&CKS take on the subject: https://attack.mitre.org/techniques/T1055/008/ 
 

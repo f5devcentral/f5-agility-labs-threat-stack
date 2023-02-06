@@ -11,7 +11,7 @@ Threat Stack with ThreatML predicts the future behavior of your infrastructure t
 
 Note: Anomalies may not be present  
 
-1. Navigate to the Threat Stack Cloud Security Platform: https://app.threatstack.com/login 
+1. Navigate to the Application Infrastructure Protection: https://app.threatstack.com/login 
 2. In the Email field, type your account email address and click Next. 
 3. In the Password field, type your account password and click Next. 
 4. Select threatML in the navigation bar or View Anomalies from the dashboard 
