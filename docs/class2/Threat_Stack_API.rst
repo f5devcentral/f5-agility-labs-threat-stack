@@ -1,7 +1,7 @@
-Threat Stack API
+AIP API
 ================
 
-Threat Stack offers two types of APIs – Webhooks and REST API. The Webhooks API pushes trigger-based alerts to a specific URL and allows Threat Stack users to operationalize the alerts in near-real time. Meanwhile, the REST API allows the user to write queries to access Threat Stack information about organization-specific security concerns. 
+AIP offers two types of APIs – **Webhooks and RESTful API**. The Webhooks API pushes trigger-based alerts to a specific URL and allows AIP users to operationalize the alerts in near-real time. Meanwhile, the REST API allows the user to write queries to access AIP information about organization-specific security concerns. 
 
  
 
@@ -13,24 +13,24 @@ Threat Stack offers two types of APIs – Webhooks and REST API. The Webhooks AP
 Webhook API 
 -----------
 
-.. image:: _static/_Integrations_Webhook.gif
+.. image:: _static/integration_webhook_v2.gif
 
-Webhooks allow Threat Stack users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. Threat Stack sends alert details in JSON format through HTTPS Post. 
+Webhooks allow AIP users to send trigger-based alerts to a specific URL and operationalize the alert data in near-real time. AIP sends alert details in JSON format through HTTPS Post. 
 
 * Using the Alert Webhooks API requires: 
 
 * webhook network access (whitelisting) 
 
-a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to integrate Threat Stack Alert Webhooks into your existing applications and workflows 
+a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to integrate AIP Alert Webhooks into your existing applications and workflows 
 
 .. note:: 
 
    *Important Note*: Webhook sends alerts through HTTPS POST, the Webhook URL must be HTTPS. 
    
+.. attention:: 
+ **Challenge 2 – Review Webhook**
 
-*Challenge 2 – Review Webhook*
-
-1. Navigate to the Application Infrastructure Protection: https://app.threatstack.com/login 
+1. Navigate to the Application Infrastructure Protection dashboard 
 2. Select Settings > Integrations in the navigation bar 
 3. Scroll to the Webhook API section 
 4. Click this link to review the events sent to Request Bin: https://requestbin.com/r/enga46ei5gint/ 
@@ -41,26 +41,26 @@ a third-party service – such as Slack, Zapier, webhooks.io, or IFTTT – to in
 RESTFul API 
 -----------
 
-.. image:: _static/_APIDOCS.gif
+.. image:: _static/apidocs_v2.gif
 
-The Threat Stack API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The Threat Stack API manages endpoints via the standard HTTP methods.  
+The AIP API using RESTful principles with predictable, resource-oriented URL, and Response Codes. The AIP API manages endpoints via the standard HTTP methods.  
 
 All requests for the API use the same host: 
 
 .. code-block::
 
-   https://api.threatstack.com/v2/ 
+   https://api.threatstack.com 
    
 **Configuring API Environment**
 
-The variables below are required to authenticate against the Threat Stack Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
+The variables below are required to authenticate against the AIP Security Platform using HAWK Authentication. This section generalizes the parameters, but each section below specifies its proper application per configuration. 
 
 **Environmental Variables**
 
-Let’s begin by gather these variables, you can find these in the **Threat Stack UI > Settings > Application Keys**
+Let’s begin by gathering these variables, you can find these in the **AIP UI > Settings > Keys**
 
 
-.. image:: _static/_Integrations_Keys.gif
+.. image:: _static/integration_keys_v2.gif
 
 **Key variables and their meaning**
 
@@ -71,12 +71,15 @@ Let’s begin by gather these variables, you can find these in the **Threat Stac
 * **TS_ORGANIZATION_ID / HAWK Ext** - Organization ID of the organization to access 
 
 
-*Challenge 3 – Configure API & First Request*
+.. note:: 
+   We **recommend using our UDF Linux Host** for the next challenge but any host with python will work.
 
-We recommend using our UDF Linux Host but any host with python will work.  
+
+.. attention:: 
+ **Challenge 3 – Configure API & First Request**
 
 
-1. Clone a copy of Threat Stack API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
+1. Clone a copy of AIP API Scripts from GitHub: https://github.com/threatstack/threatstack-api-scripts.git 
 
 .. code-block:: 
 
