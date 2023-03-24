@@ -1,14 +1,14 @@
-Threat Stack Agent
+Application Infrastructure Protection Agent
 =====================================
 
-Deploying the Threat Stack Agent 
+Deploying the AIP Agent 
 ---------------------------------
-Before you install the Threat Stack host-based Agent, you must prepare your Linux distribution to work with the Agent. 
+Before you install the AIP host-based Agent, you must prepare your Linux distribution to work with the Agent. 
 
-The Threat Stack host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
+The AIP host-based Agent uses the Linux Audit Framework to collect file, network, and process data.  
 
 
-.. image:: _static/_ServerPages_Install.gif
+.. image:: _static/serverpages_install_v2.gif
 
 
 
@@ -17,7 +17,7 @@ Check for other Agents
 
 .. note::
 
-   Conflict can occur between the Threat Stack host-based Agent and other tools leveraging these kernels. Before deploying the Agent, ensure no other      tools that use these kernels. This is the result of a known Linux limitation where only one process can bind to the AuditD socket. 
+   Conflict can occur between the AIP host-based Agent and other tools leveraging these kernels. Before deploying the Agent, ensure no other      tools that use these kernels. This is the result of a known Linux limitation where only one process can bind to the AuditD socket. 
    
 Code Block To Check for Services leveraging audit
 
@@ -26,18 +26,18 @@ Code Block To Check for Services leveraging audit
    ps aux | grep audit
 
 
-Code Block to Check for The Threat Stack Agent on the machine
+Code Block to Check for The AIP Agent on the machine
 
 .. code-block:: 
    
    sudo tsagent status
 
 
-Install the Threat Stack Agent
+Install the AIP Agent
 ------------------------------
 *Prerequisites*
 
-* Access to the Threat Stack Console
+* Access to the AIP Console
 * Access to host either via CLI or RDP on a supported Operating System architecture(ARM or x86 architecture)
 * Access to a supported browser (Chrome, Edge, Safi, and Firefox)
 
@@ -45,11 +45,11 @@ Install the Threat Stack Agent
 
 *Linux Distributions*
 
-Threat Stack automatically walks customers through an Agent install on the Servers page. Log into Threat Stack > Click Servers. The Servers page displays.
+AIP automatically walks customers through an Agent install on the Servers page. Log into AIP > Click Servers. The Servers page displays.
 
 Select Agent 2.x. The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your Linux distribution. 
 
-*Challenge 6 – Install the Threat Stack Linux Agent*
+*Challenge 6 – Install the AIP Linux Agent*
 
 Let’s begin by configuring some environmental variables for a streamlined lab.
 
@@ -62,7 +62,7 @@ Let’s begin by configuring some environmental variables for a streamlined lab.
 
 .. note::
 
-   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,     “Linux” 
+   **Warning**: Use only the command provided to install the AIP Linux Agent. Using UDF, establish a Terminal session with the host labelled,     “Linux” 
    
    
 .. code-block::
@@ -77,22 +77,22 @@ Let’s begin by configuring some environmental variables for a streamlined lab.
 Windows Distributions 
 ----------------------
 
-Threat Stack automatically walks customers through an Agent install on the **Servers** page. Log into Threat Stack > Click **Servers**. The **Servers** page displays. 
+AIP automatically walks customers through an Agent install on the **Servers** page. Log into AIP > Click **Servers**. The **Servers** page displays. 
 
 Select **Agent 2.x.** The + Add New Server dialog displays. Proceed to the set of instructions below, specific to your **Windows Sever 2012 or above**. 
 
-*Challenge 7 – Install the Threat Stack Windows Agent*
+*Challenge 7 – Install the AIP Windows Agent*
 
 Let’s begin by configuring some environmental variables for a streamlined lab. Let’s open **PowerShell**
 
 .. code-block::
 
-   $Env:MY_DEPLOY_KEY="979d8df5efe295d73734109b121a33865429ebbd2a8d7ede66147404f993c3bbab4466a0" 
+   $Env:MY_DEPLOY_KEY="XXXXXXXXX" 
    $Env:MY_HOSTNAME="StudentN-Windows" 
 
 .. note::
 
-   **Warning**: Use only the command provided to install the Threat Stack Linux Agent. Using UDF, establish a Terminal session with the host labelled,      “Windows” 
+   **Warning**: Use only the command provided to install the AIP Windows Agent. Using UDF, establish a Terminal session with the host labelled,      “Windows” 
    
    
    
@@ -119,12 +119,14 @@ Run the following commands from powershell/terminal:
 
 Container Distributions 
 -----------------------
-The Threat Stack Container Agent can be orchestrated using Kubernetes, Docker, and others. By default, the following rulesets are applied: 
+The AIP Container Agent can be orchestrated using Kubernetes, Docker, and others. By default, the following rulesets are applied: 
 
 * Base Rule Set 
 * Docker Rule Set 
 * Kubernetes Rule Set (Optional)
-
+  
+.. note::
+ Methodologies for deployment such as container-only is available in our public documentation.
 
 
 Helm Chart 
@@ -139,11 +141,11 @@ Helm is a package manager on top of Kubernetes. It facilitates installation, upg
 
 
 
-*Challenge 8 – Install the Threat Stack Container Agent*
+*Challenge 8 – Install the AIP Container Agent*
 
 .. note::
 
-   Warning: Use only the command provided to install the Threat Stack Container Agent. Using UDF, establish a Terminal session with the host labelled,   “k8s” 
+   Warning: Use only the command provided to install the AIP Container Agent. Using UDF, establish a Terminal session with the host labelled,   “k8s” 
 
 
 .. code-block::
@@ -151,7 +153,7 @@ Helm is a package manager on top of Kubernetes. It facilitates installation, upg
    wget https://raw.githubusercontent.com/threatstack/threatstack-helm/master/values.yaml 
    vim values.yaml 
  
-In the values.yaml, lets update a couple things. First, the **hostname on line 51** so Lab leaders can track activity easily in the lab. Then, agentDeployKey on line 67 with your previously used key and  
+In the values.yaml, lets update a couple things. First, the **hostname on line 51** so Lab leaders can track activity easily in the lab. Then, agentDeployKey on line 67 with your previously used key.  
 
 
 .. code-block::
@@ -162,7 +164,7 @@ In the values.yaml, lets update a couple things. First, the **hostname on line 5
 
    67 agentDeployKey: "PROVIDED_DEPLOYKEY" 
 
-Now that we have our values.yaml file updated, lets deploy the Threat Stack Container Agent.  
+Now that we have our values.yaml file updated, lets deploy the AIP Container Agent.  
 
 .. code-block::
 
@@ -180,5 +182,19 @@ To Reload K8 Config
 
 .. code-block::
 
-   helm install threatstack-agent --values values.yaml threatstack/threatstack-agent 
+   helm install threatstack-agent --values values.yaml threatstack/threatstack-agent
+   NAME: threatstack-agent
+   LAST DEPLOYED: Tue Jun  7 00:12:48 2022
+   NAMESPACE: default
+   STATUS: deployed
+   REVISION: 1
+   TEST SUITE: None
+   NOTES:
+   AIP agents are being deployed. After a few minutes, you should see
+   agents showing up on your server tab.
+
+ 
+
+
+
 

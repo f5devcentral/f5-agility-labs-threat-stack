@@ -1,4 +1,4 @@
-Threat Stack Playbooks
+AIP Playbooks
 ======================
 
 Spring4Shell Playbook
@@ -66,7 +66,5 @@ Now run the following command via shell
 
 
 
-Section 2
----------
-
-Fill in here
+This Completes the Lab
+----------------------
