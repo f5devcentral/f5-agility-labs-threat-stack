@@ -1,4 +1,4 @@
-F5 Agility Threat Stack Labs
+F5 Agility Application Infrastructure Protection
 ============================
 
 Introduction

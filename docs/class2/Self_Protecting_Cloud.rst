@@ -1,11 +1,11 @@
-Threat Stack Playbooks
-======================
+AIP Playbooks
+==============
 
 
 Self-Protecting Cloud
 ---------------------
 
-Leveraging the Threat Stack API and simple code enables a host to proactively respond to activity automatically.  
+Leveraging the AIP API and simple code enables a host to proactively respond to activity automatically.  
 
 Confirm Python Environment
 
@@ -54,7 +54,7 @@ Python Bot Setup
 The following series of commands are meant to configure and set up the python bot. The python bot can be found in the home directory of the Linux host. 
 
 
-Step 1: Update Threat Stack Credentials File 
+Step 1: Update AIP Credentials File 
 
 .. code-block::
 
