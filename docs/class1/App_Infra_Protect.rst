@@ -1,14 +1,19 @@
-Application Infrastructure Protection (AIP)
+F5 Distributed Cloud Application Infrastructure Protection (AIP)
 ************************************
 
-.. image:: _static/F5XC_Login.gif
+.. image:: _static/login_v2.gif
 
 .. attention:: 
- **Challenge 1** – *Access the Application Infrastructure Protection*
+ **Challenge 1** – *Access the F5 Distributed Cloud AIP*
 
- 1. Navigate to **your org** Application Infrastructure Protection 
- 2. Log into F5XC Tenant, utilizing your assigned credentials and click Sign In. 
- 3. Either Search for **AIP** or scroll down to the **Application Infrastructure Protection (AIP)**. 
+ 1. Check your inbox for an "Update Password" email and proceed with the password update process 
+ 2. Navigate to the Distributed Cloud Console: https://f5-xc-lab-sec.console.ves.volterra.io/ 
+ 3. In the Email field type your account email address and click Next
+ 4. In the Password field, type your account password and click Next 
+ 5. Check all the boxes on "what do you identify yourself" and click Next
+ 6. Select "Advanced" for your level of user and click Get Started 
+ 7. Scroll down and find the tile, "App Infrastructure Protection" and click on the tile
+ 8. Click the blue rectangle "Visit Service"
 
 .. note::
  Access to the Application Infrastructure Protection (AIP) is managed by the Lab Members or the tenant owners.
@@ -17,7 +22,7 @@ Monitoring
 -----------
 By selecting **Servers Page**, you can filter or change information shown about servers, deploy Agents, and view a list of vulnerabilities found on the servers protected by the Agent. 
 
-.. image:: _static/_ServerPages.gif
+.. image:: _static/serverpages_v2.gif
 
 .. note::
  For a feature walthrough of the Servers Page navigate to: https://threatstack.zendesk.com/hc/en-us/articles/360055728251-Servers-Page 
@@ -29,12 +34,12 @@ Application Infrastructure Protection (AIP) Agent retrieves a list of installed 
 .. note::
  For a feature walthrough of Vulnerability Assessments navigate here: https://threatstack.zendesk.com/hc/en-us/articles/115001295270-Vulnerability-Assessment-Feature-Overview 
 
-.. image:: _static/_ServerPages_Vulns.gif
+.. image:: _static/serverpages_vuln_v2.gif
 
 AWS EC2 Inventory 
 ^^^^^^^^^^^^^^^
 With an Amazon Web Service (AWS) profile integration, the user can see exactly what instances are protected and which are not. The Application Infrastructure ProtectionⓇ (AIP) will always reflect the current state of your infrastructure through continuous scans for instance creation or termination, etc.  
-.. image:: _static/_ServerPages_AllEC2.gif
+.. image:: _static/serverpages_ec2_v2.gif
 
 .. attention:: 
  **Challenge 2** - *How To Review A Application Infrastructure Protection (AIP) Environment*
@@ -52,21 +57,21 @@ By selecting *Rules Page*, you can review all the included pre-built rules that 
 
 * **All Rules** can be created, updated, modified and deleted.
 
-.. image:: _static/_RulesPage.gif
+.. image:: _static/rulespage_v2.gif
 
 
 Rules Overview
 ^^^^^^^^^^^^^^^
 Select the **Options** button to view available configurations for the rule selected. Following, to update or delete a rule, select the **Down Arrow > Edit Rule**. 
 
-.. image:: _static/_RulesPage_Drawer.gif
+.. image:: _static/rulespage_drawer_v2.gif
 
 
 Enable/Disable a Rule 
 ^^^^^^^^^^^^^^^^^^^^^
 By shifting the **Status** of the rule, you can **Enable** or **Disable** the rule.  
 
-.. image:: _static/_RulesPage_OnOff.gif
+.. image:: _static/rulespage_onoff_v2.gif
 
 .. attention:: 
  **Challenge 3** – *How to use Application Infrastructure Protection (AIP) Rules*
@@ -104,7 +109,7 @@ By shifting the **Status** of the rule, you can **Enable** or **Disable** the ru
 Investigate
 ---------------------
 
-.. image:: _static/_AlertPage.gif
+.. image:: _static/alertpage_V2.gif
 
 By selecting Alerts, you’ll see an organized list sorted by severity, number of occurrences, and time of occurrence. Our rules are generated in real-time and have a retention period of 365 days. This can help you better track the abnormal spikes of alerts and review the behaviors that caused the events. Additional UI details are defined below. 
 
@@ -145,9 +150,9 @@ The following rule shows a Severity 1 event, where the Alert is reporting that P
 For more information as to why watch a Ptrace syscall, here is the MITRE ATT&CKS take on the subject: https://attack.mitre.org/techniques/T1055/008/ 
 
 
-.. image:: _static/_AlertPage_AlertContext.gif
+.. image:: _static/alertpage_context_v2.gif
 
-Generally, the alert lifecycle starts when you create a rule on the Threat Stack Rules page. 
+Generally, the alert lifecycle starts when you create a rule on the AIP Rules page. 
 
 1. Create a rule 
 2. Maximize the effectiveness of that rule 
