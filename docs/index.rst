@@ -1,4 +1,4 @@
-F5 Agility Labs - Threat Stack
+F5 Agility Labs - Application infrastructure Protection
 ==========================================================================
 
 .. image:: class1/_static/Architecture.png
